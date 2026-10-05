@@ -1,0 +1,30 @@
+# Render blueprint for BizBook
+# Docs: https://render.com/docs/blueprint-spec
+#
+# Deploy: Render dashboard > New > Blueprint > point at this repo.
+# Required before first deploy: set MONGO_URI and JWT_SECRET (sync: false),
+# then run `npm run seed:force` once via the shell to populate the database.
+
+services:
+  - type: web
+    name: bizbook
+    runtime: node
+    plan: free
+    region: singapore
+    # Builds web/dist, then the Express server serves both the API and that build.
+    buildCommand: npm run install:all && npm run build
+    startCommand: npm start
+    healthCheckPath: /api/health
+    autoDeploy: true
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: HOST
+        value: 0.0.0.0
+      # Render sets PORT automatically.
+      - key: MONGO_URI
+        sync: false
+      - key: MONGO_DB
+        value: bizbook
+      - key: JWT_SECRET
+        generateValue: true

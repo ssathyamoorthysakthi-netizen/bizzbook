@@ -1,0 +1,18 @@
+{
+  "name": "bizbook",
+  "version": "1.0.0",
+  "private": true,
+  "description": "BizBook — Indian B2B marketplace (React + Express + MongoDB)",
+  "scripts": {
+    "install:all": "npm install --prefix server && npm install --prefix web",
+    "build": "npm run build --prefix web",
+    "start": "npm start --prefix server",
+    "dev:web": "npm run dev --prefix web",
+    "dev:api": "npm run dev --prefix server",
+    "seed": "npm run seed --prefix server",
+    "seed:force": "npm run seed:force --prefix server"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

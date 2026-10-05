@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>List Your Business — BizBook</title>
+<meta name="description" content="List your business on BizBook for free. Reach 2 million+ buyers across India, get a verified badge and receive qualified leads.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%23f26522'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body>
+
+<header class="header is-stuck" id="header">
+  <div class="container header__inner">
+    <a class="brand" href="../index.html" aria-label="BizBook home">
+      <span class="brand__mark" aria-hidden="true"><svg viewBox="0 0 32 32" width="32" height="32"><rect width="32" height="32" rx="9" fill="#f26522"/><path d="M10.5 8.5h10.2a2.3 2.3 0 0 1 2.3 2.3v12.7h-10a2.5 2.5 0 0 1-2.5-2.5V8.5z" fill="#fff"/><path d="M13.2 12.6h6.6M13.2 16h6.6M13.2 19.4h4" stroke="#f26522" stroke-width="1.7" stroke-linecap="round"/></svg></span>
+      <span class="brand__text"><span class="brand__name">BizBook</span><span class="brand__tag">India's Business Marketplace</span></span>
+    </a>
+    <nav class="nav" aria-label="Primary">
+      <ul class="nav__list">
+        <li><a href="find-businesses.html">Find Businesses</a></li>
+        <li><a href="find-products.html">Find Products</a></li>
+        <li><a href="find-services.html">Find Services</a></li>
+        <li><a href="for-buyers.html">For Buyers</a></li>
+        <li><a href="for-businesses.html">For Businesses</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+      </ul>
+    </nav>
+    <div class="header__actions">
+      <a class="header__login" href="login.html">Login</a>
+      <a class="header__signup" href="signup.html">Sign Up</a>
+      <a class="btn btn--accent" href="list-your-business.html">List Your Business</a>
+    </div>
+    <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<div class="mobilemenu" id="mobileMenu" hidden>
+  <ul class="mmenu__nav">
+    <li><a href="find-businesses.html">Find Businesses</a></li>
+    <li><a href="find-products.html">Find Products</a></li>
+    <li><a href="find-services.html">Find Services</a></li>
+    <li><a href="for-buyers.html">For Buyers</a></li>
+    <li><a href="for-businesses.html">For Businesses</a></li>
+    <li><a href="resources.html">Resources</a></li>
+    <li><a href="pricing.html">Pricing</a></li>
+  </ul>
+  <div class="mmenu__auth">
+    <a class="btn btn--ghost btn--block" href="login.html">Login</a>
+    <a class="btn btn--accent btn--block" href="signup.html">Sign Up Free</a>
+  </div>
+  <a class="btn btn--primary btn--block" href="list-your-business.html">List Your Business</a>
+</div>
+
+<section class="pagehero">
+  <div class="container">
+    <nav class="crumbs" aria-label="Breadcrumb"><a href="../index.html">Home</a><span>/</span><b>List Your Business</b></nav>
+    <h1>List your business on BizBook — free</h1>
+    <p>Publish your profile, add your products and start receiving qualified buyer enquiries. Verification is included at no cost.</p>
+    <ul class="hero__trust" style="margin-top:4px">
+      <li><svg viewBox="0 0 24 24"><path d="m5 12.5 4.5 4.5L19 7"/></svg> No listing fee</li>
+      <li><svg viewBox="0 0 24 24"><path d="m5 12.5 4.5 4.5L19 7"/></svg> Live within 48 hours</li>
+      <li><svg viewBox="0 0 24 24"><path d="m5 12.5 4.5 4.5L19 7"/></svg> Dedicated onboarding help</li>
+    </ul>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="split">
+      <div class="authcard reveal" style="border-radius:var(--radius-xl);padding:32px">
+        <h2 style="font-size:1.35rem">Business listing details</h2>
+        <p style="color:var(--ink-600);font-size:.9rem">Fill this in and our verification team will review your details within two working days.</p>
+        <form data-demo="Thanks! Your listing has been submitted for verification. We will email you within 48 hours.">
+          <div class="field">
+            <label for="l-bname">Business name</label>
+            <input id="l-bname" type="text" placeholder="Registered / trade name" required>
+          </div>
+          <div class="formrow">
+            <div class="field">
+              <label for="l-legal">Legal entity name</label>
+              <input id="l-legal" type="text" placeholder="As per GST records">
+            </div>
+            <div class="field">
+              <label for="l-gst">GSTIN</label>
+              <input id="l-gst" type="text" placeholder="22AAAAA0000A1Z5">
+              <small>Required for the verified badge.</small>
+            </div>
+          </div>
+          <div class="formrow">
+            <div class="field">
+              <label for="l-type">Business type</label>
+              <select id="l-type" required>
+                <option value="">Select type</option>
+                <option>Manufacturer</option><option>Supplier</option><option>Wholesaler</option>
+                <option>Distributor</option><option>Exporter</option><option>Contractor</option><option>Service Provider</option><option>Retailer</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="l-year">Year established</label>
+              <input id="l-year" type="number" min="1900" max="2026" placeholder="2012">
+            </div>
+          </div>
+          <div class="formrow">
+            <div class="field">
+              <label for="l-cat">Primary industry</label>
+              <select id="l-cat" required>
+                <option value="">Select industry</option>
+                <option>Manufacturing</option><option>Machinery &amp; Equipment</option><option>Electronics &amp; Electrical</option>
+                <option>Construction &amp; Building</option><option>Automotive</option><option>Textile &amp; Garments</option>
+                <option>Food &amp; Beverage</option><option>Healthcare &amp; Medical</option><option>Professional Services</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="l-scale">Annual turnover</label>
+              <select id="l-scale">
+                <option value="">Prefer not to say</option>
+                <option>Under &#8377;50 lakh</option><option>&#8377;50 lakh &ndash; &#8377;5 crore</option>
+                <option>&#8377;5 crore &ndash; &#8377;25 crore</option><option>&#8377;25 crore &ndash; &#8377;100 crore</option><option>Above &#8377;100 crore</option>
+              </select>
+            </div>
+          </div>
+          <div class="field">
+            <label for="l-addr">Factory / office address</label>
+            <textarea id="l-addr" rows="3" placeholder="Street, area, city, state, PIN" required></textarea>
+          </div>
+          <div class="formrow">
+            <div class="field">
+              <label for="l-city">City</label>
+              <input id="l-city" type="text" placeholder="e.g. Coimbatore" required>
+            </div>
+            <div class="field">
+              <label for="l-state">State</label>
+              <select id="l-state" required>
+                <option value="">Select state</option>
+                <option>Andhra Pradesh</option><option>Assam</option><option>Bihar</option><option>Chhattisgarh</option>
+                <option>Delhi</option><option>Goa</option><option>Gujarat</option><option>Haryana</option><option>Jharkhand</option>
+                <option>Karnataka</option><option>Kerala</option><option>Madhya Pradesh</option><option>Maharashtra</option>
+                <option>Odisha</option><option>Punjab</option><option>Rajasthan</option><option>Tamil Nadu</option>
+                <option>Telangana</option><option>Uttar Pradesh</option><option>Uttarakhand</option><option>West Bengal</option>
+              </select>
+            </div>
+          </div>
+          <div class="formrow">
+            <div class="field">
+              <label for="l-name">Contact person</label>
+              <input id="l-name" type="text" placeholder="Full name" required>
+            </div>
+            <div class="field">
+              <label for="l-phone">Mobile number</label>
+              <input id="l-phone" type="tel" placeholder="+91 98765 43210" required>
+            </div>
+          </div>
+          <div class="field">
+            <label for="l-desc">About your business</label>
+            <textarea id="l-desc" rows="4" placeholder="Describe your capabilities, capacity, certifications and key products (min 100 characters)"></textarea>
+            <small>Well-written profiles receive 3x more enquiries.</small>
+          </div>
+          <div class="formrow">
+            <div class="field">
+              <label for="l-cert">Certifications</label>
+              <select id="l-cert" multiple size="4">
+                <option>ISO 9001</option><option>ISO 14001</option><option>CE Marking</option>
+                <option>MSME / Udyam</option><option>BIS Certified</option><option>FSSAI</option><option>Export Promotion Council</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="l-exp">Export experience</label>
+              <select id="l-exp">
+                <option value="">Select</option>
+                <option>Not exported yet</option>
+                <option>Exporting to 1&ndash;3 countries</option>
+                <option>Exporting to 4&ndash;10 countries</option><option>Exporting to 10+ countries</option>
+              </select>
+            </div>
+          </div>
+          <label class="fcheck" style="margin-bottom:20px"><input type="checkbox" required> I confirm the information above is accurate and authorise BizBook to verify it with relevant records.</label>
+          <button class="btn btn--accent btn--block btn--lg" type="submit">Submit for Free Verification</button>
+        </form>
+      </div>
+
+      <div class="reveal" data-delay="1">
+        <div class="panel" style="margin-bottom:20px">
+          <h3 style="font-size:1.08rem">What happens next</h3>
+          <div class="steps" style="grid-template-columns:1fr;margin-top:20px">
+            <div class="step" style="text-align:left;display:flex;gap:16px;align-items:flex-start;padding:18px">
+              <span class="step__num" style="margin:0;flex:none">01</span>
+              <div><h3 style="font-size:.98rem">Document check</h3><p style="font-size:.85rem">We validate GSTIN, MSME/Udyam and factory address against source records.</p></div>
+            </div>
+            <div class="step" style="text-align:left;display:flex;gap:16px;align-items:flex-start;padding:18px">
+              <span class="step__num" style="margin:0;flex:none">02</span>
+              <div><h3 style="font-size:.98rem">Go live with your badge</h3><p style="font-size:.85rem">Your profile is published with a BizBook Verified trust mark buyers can see.</p></div>
+            </div>
+            <div class="step" style="text-align:left;display:flex;gap:16px;align-items:flex-start;padding:18px">
+              <span class="step__num" style="margin:0;flex:none">03</span>
+              <div><h3 style="font-size:.98rem">Receive leads</h3><p style="font-size:.85rem">Matched RFQs land in your dashboard. Respond fast to climb the ranking.</p></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="panel">
+          <h3 style="font-size:1.08rem">Sellers love</h3>
+          <ul class="ticks" style="margin-top:1.2em">
+            <li><svg viewBox="0 0 24 24"><path d="m5 12.5 4.5 4.5L19 7"/></svg><div><strong>100K+ monthly leads</strong><span>Distributed across verified businesses on the network.</span></div></li>
+            <li><svg viewBox="0 0 24 24"><path d="m5 12.5 4.5 4.5L19 7"/></svg><div><strong>Free lead CRM</strong><span>Every enquiry, quote and follow-up tracked in one dashboard.</span></div></li>
+            <li><svg viewBox="0 0 24 24"><path d="m5 12.5 4.5 4.5L19 7"/></svg><div><strong>Unlimited enquiries</strong><span>Buyer conversations are never capped on any plan.</span></div></li>
+          </ul>
+          <a class="btn btn--outline btn--block" href="pricing.html" style="margin-top:22px">Compare Seller Plans</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__bottom" style="border-top:none">
+      <p>&copy; 2016&ndash;2026 BizBook Marketplace Pvt. Ltd. All rights reserved.</p>
+      <nav class="footer__legal" aria-label="Legal"><a href="terms.html">Terms of Use</a><a href="privacy.html">Privacy Policy</a><a href="help.html">Help Centre</a></nav>
+    </div>
+  </div>
+</footer>
+
+<button class="totop" id="toTop" aria-label="Back to top"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6"/></svg></button>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script src="../assets/js/main.js"></script>
+</body>
+</html>

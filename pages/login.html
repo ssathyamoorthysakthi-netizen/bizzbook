@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login — BizBook</title>
+<meta name="description" content="Log in to your BizBook account to manage listings, enquiries, orders and analytics.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%23f26522'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body>
+
+<header class="header is-stuck" id="header">
+  <div class="container header__inner">
+    <a class="brand" href="../index.html" aria-label="BizBook home">
+      <span class="brand__mark" aria-hidden="true"><svg viewBox="0 0 32 32" width="32" height="32"><rect width="32" height="32" rx="9" fill="#f26522"/><path d="M10.5 8.5h10.2a2.3 2.3 0 0 1 2.3 2.3v12.7h-10a2.5 2.5 0 0 1-2.5-2.5V8.5z" fill="#fff"/><path d="M13.2 12.6h6.6M13.2 16h6.6M13.2 19.4h4" stroke="#f26522" stroke-width="1.7" stroke-linecap="round"/></svg></span>
+      <span class="brand__text"><span class="brand__name">BizBook</span><span class="brand__tag">India's Business Marketplace</span></span>
+    </a>
+    <nav class="nav" aria-label="Primary">
+      <ul class="nav__list">
+        <li><a href="find-businesses.html">Find Businesses</a></li>
+        <li><a href="find-products.html">Find Products</a></li>
+        <li><a href="find-services.html">Find Services</a></li>
+        <li><a href="for-buyers.html">For Buyers</a></li>
+        <li><a href="for-businesses.html">For Businesses</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+      </ul>
+    </nav>
+    <div class="header__actions">
+      <a class="header__login" href="login.html">Login</a>
+      <a class="header__signup" href="signup.html">Sign Up</a>
+      <a class="btn btn--accent" href="list-your-business.html">List Your Business</a>
+    </div>
+    <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<div class="mobilemenu" id="mobileMenu" hidden>
+  <ul class="mmenu__nav">
+    <li><a href="find-businesses.html">Find Businesses</a></li>
+    <li><a href="find-products.html">Find Products</a></li>
+    <li><a href="find-services.html">Find Services</a></li>
+    <li><a href="for-buyers.html">For Buyers</a></li>
+    <li><a href="for-businesses.html">For Businesses</a></li>
+    <li><a href="resources.html">Resources</a></li>
+    <li><a href="pricing.html">Pricing</a></li>
+  </ul>
+  <div class="mmenu__auth">
+    <a class="btn btn--ghost btn--block" href="login.html">Login</a>
+    <a class="btn btn--accent btn--block" href="signup.html">Sign Up Free</a>
+  </div>
+  <a class="btn btn--primary btn--block" href="list-your-business.html">List Your Business</a>
+</div>
+
+<section class="pagehero">
+  <div class="container">
+    <nav class="crumbs" aria-label="Breadcrumb"><a href="../index.html">Home</a><span>/</span><b>Login</b></nav>
+    <h1>Welcome back</h1>
+    <p>Log in to manage your listings, respond to enquiries and track orders.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="authwrap">
+      <div class="authcard">
+        <form data-demo="Demo login submitted — connect your auth backend to continue.">
+          <div class="field">
+            <label for="l-email">Email or mobile number</label>
+            <input id="l-email" type="text" placeholder="you@company.com or +91 98765 43210" required>
+          </div>
+          <div class="field">
+            <label for="l-pw">Password</label>
+            <input id="l-pw" type="password" placeholder="Your password" required>
+          </div>
+          <div style="display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:20px;flex-wrap:wrap">
+            <label class="fcheck"><input type="checkbox" checked> Keep me signed in</label>
+            <a href="help.html" style="font-size:.85rem;font-weight:600">Forgot password?</a>
+          </div>
+          <button class="btn btn--accent btn--block btn--lg" type="submit">Log In</button>
+          <div class="sepr">or continue with</div>
+          <div style="display:grid;gap:10px">
+            <button class="btn btn--outline btn--block" type="button" data-demo="Google login is not wired up in this demo.">Continue with Google</button>
+            <button class="btn btn--outline btn--block" type="button" data-demo="LinkedIn login is not wired up in this demo.">Continue with LinkedIn</button>
+          </div>
+        </form>
+        <p style="text-align:center;margin:22px 0 0;font-size:.87rem;color:var(--ink-500)">New to BizBook? <a href="signup.html">Create a free account</a></p>
+      </div>
+
+      <div class="authcard">
+        <h2 style="font-size:1.4rem">Your Buyer Dashboard</h2>
+        <p style="color:var(--ink-600);font-size:.92rem">Track every RFQ, quotation and order from a single workspace.</p>
+        <div class="dash" style="box-shadow:none;padding:20px;margin-top:20px">
+          <div class="dash__stats" style="grid-template-columns:repeat(2,minmax(0,1fr));padding-top:0">
+            <div><span>Open RFQs</span><strong>14</strong><em class="up">+3 today</em></div>
+            <div><span>Quotes In</span><strong>62</strong><em class="up">+8</em></div>
+            <div><span>Orders Placed</span><strong>27</strong><em class="up">+5</em></div>
+            <div><span>Spend (MTD)</span><strong>&#8377;18.4L</strong><em class="down">-4.2%</em></div>
+          </div>
+          <ul class="dash__list">
+            <li><span class="dash__flag">A</span><div><strong>Solar Panel 550W &mdash; 500 units</strong><em>3 quotations received &middot; Mumbai</em></div><span class="chip chip--amber">Compare</span></li>
+            <li><span class="dash__flag">B</span><div><strong>Cotton Fabric &mdash; 20,000 m</strong><em>PO issued &middot; Coimbatore</em></div><span class="chip chip--green">On track</span></li>
+          </ul>
+        </div>
+        <a class="btn btn--outline btn--block" href="for-buyers.html" style="margin-top:20px">Learn about buyer tools</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__bottom" style="border-top:none">
+      <p>&copy; 2016&ndash;2026 BizBook Marketplace Pvt. Ltd. All rights reserved.</p>
+      <nav class="footer__legal" aria-label="Legal"><a href="terms.html">Terms of Use</a><a href="privacy.html">Privacy Policy</a><a href="help.html">Help Centre</a></nav>
+    </div>
+  </div>
+</footer>
+
+<button class="totop" id="toTop" aria-label="Back to top"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6"/></svg></button>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script src="../assets/js/main.js"></script>
+</body>
+</html>

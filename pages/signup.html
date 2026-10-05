@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sign Up — BizBook</title>
+<meta name="description" content="Create your free BizBook account as a buyer or a business. List your business and reach buyers across India.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%23f26522'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body>
+
+<header class="header is-stuck" id="header">
+  <div class="container header__inner">
+    <a class="brand" href="../index.html" aria-label="BizBook home">
+      <span class="brand__mark" aria-hidden="true"><svg viewBox="0 0 32 32" width="32" height="32"><rect width="32" height="32" rx="9" fill="#f26522"/><path d="M10.5 8.5h10.2a2.3 2.3 0 0 1 2.3 2.3v12.7h-10a2.5 2.5 0 0 1-2.5-2.5V8.5z" fill="#fff"/><path d="M13.2 12.6h6.6M13.2 16h6.6M13.2 19.4h4" stroke="#f26522" stroke-width="1.7" stroke-linecap="round"/></svg></span>
+      <span class="brand__text"><span class="brand__name">BizBook</span><span class="brand__tag">India's Business Marketplace</span></span>
+    </a>
+    <nav class="nav" aria-label="Primary">
+      <ul class="nav__list">
+        <li><a href="find-businesses.html">Find Businesses</a></li>
+        <li><a href="find-products.html">Find Products</a></li>
+        <li><a href="find-services.html">Find Services</a></li>
+        <li><a href="for-buyers.html">For Buyers</a></li>
+        <li><a href="for-businesses.html">For Businesses</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+      </ul>
+    </nav>
+    <div class="header__actions">
+      <a class="header__login" href="login.html">Login</a>
+      <a class="header__signup" href="signup.html">Sign Up</a>
+      <a class="btn btn--accent" href="list-your-business.html">List Your Business</a>
+    </div>
+    <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<div class="mobilemenu" id="mobileMenu" hidden>
+  <ul class="mmenu__nav">
+    <li><a href="find-businesses.html">Find Businesses</a></li>
+    <li><a href="find-products.html">Find Products</a></li>
+    <li><a href="find-services.html">Find Services</a></li>
+    <li><a href="for-buyers.html">For Buyers</a></li>
+    <li><a href="for-businesses.html">For Businesses</a></li>
+    <li><a href="resources.html">Resources</a></li>
+    <li><a href="pricing.html">Pricing</a></li>
+  </ul>
+  <div class="mmenu__auth">
+    <a class="btn btn--ghost btn--block" href="login.html">Login</a>
+    <a class="btn btn--accent btn--block" href="signup.html">Sign Up Free</a>
+  </div>
+  <a class="btn btn--primary btn--block" href="list-your-business.html">List Your Business</a>
+</div>
+
+<section class="pagehero">
+  <div class="container">
+    <nav class="crumbs" aria-label="Breadcrumb"><a href="../index.html">Home</a><span>/</span><b>Sign Up</b></nav>
+    <h1>Create your free BizBook account</h1>
+    <p>Join 500,000+ listed businesses and 2 million+ buyers already trading on the platform. It takes under two minutes.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="authwrap">
+      <div class="authcard">
+        <div class="acctabs">
+          <button class="is-active" data-tab="business">I'm a Business</button>
+          <button data-tab="buyer">I'm a Buyer</button>
+        </div>
+
+        <form data-panel="business" data-demo="Account created! Check your email to verify your business listing.">
+          <div class="field">
+            <label for="s-bname">Business name</label>
+            <input id="s-bname" type="text" placeholder="e.g. Shreeji CNC Works" required>
+          </div>
+          <div class="formrow">
+            <div class="field">
+              <label for="s-name">Contact person</label>
+              <input id="s-name" type="text" placeholder="Full name" required>
+            </div>
+            <div class="field">
+              <label for="s-phone">Mobile number</label>
+              <input id="s-phone" type="tel" placeholder="+91 98765 43210" required>
+            </div>
+          </div>
+          <div class="formrow">
+            <div class="field">
+              <label for="s-email">Work email</label>
+              <input id="s-email" type="email" placeholder="you@company.com" required>
+            </div>
+            <div class="field">
+              <label for="s-gst">GSTIN (optional)</label>
+              <input id="s-gst" type="text" placeholder="22AAAAA0000A1Z5">
+              <small>Unlocks the verified badge instantly.</small>
+            </div>
+          </div>
+          <div class="formrow">
+            <div class="field">
+              <label for="s-cat">Primary industry</label>
+              <select id="s-cat" required>
+                <option value="">Select industry</option>
+                <option>Manufacturing</option><option>Machinery &amp; Equipment</option><option>Electronics &amp; Electrical</option>
+                <option>Construction &amp; Building</option><option>Automotive</option><option>Textile &amp; Garments</option>
+                <option>Food &amp; Beverage</option><option>Healthcare &amp; Medical</option><option>Professional Services</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="s-city">Business location</label>
+              <select id="s-city" required>
+                <option value="">Select state / city</option>
+                <option>Maharashtra</option><option>Gujarat</option><option>Karnataka</option><option>Tamil Nadu</option>
+                <option>Delhi NCR</option><option>West Bengal</option><option>Rajasthan</option><option>Telangana</option><option>Madhya Pradesh</option>
+              </select>
+            </div>
+          </div>
+          <div class="field">
+            <label for="s-pw">Create password</label>
+            <input id="s-pw" type="password" placeholder="Minimum 8 characters" required>
+          </div>
+          <label class="fcheck" style="margin-bottom:18px"><input type="checkbox" required> I agree to the <a href="terms.html">Terms of Use</a> and <a href="privacy.html">Privacy Policy</a></label>
+          <button class="btn btn--accent btn--block btn--lg" type="submit">Create Business Account</button>
+        </form>
+
+        <form data-panel="buyer" data-demo="Welcome to BizBook! Your buyer account is ready." hidden>
+          <div class="field">
+            <label for="b-name">Full name</label>
+            <input id="b-name" type="text" placeholder="Your name" required>
+          </div>
+          <div class="formrow">
+            <div class="field">
+              <label for="b-email">Work email</label>
+              <input id="b-email" type="email" placeholder="you@company.com" required>
+            </div>
+            <div class="field">
+              <label for="b-phone">Mobile number</label>
+              <input id="b-phone" type="tel" placeholder="+91 98765 43210" required>
+            </div>
+          </div>
+          <div class="formrow">
+            <div class="field">
+              <label for="b-co">Company name</label>
+              <input id="b-co" type="text" placeholder="Where you work" required>
+            </div>
+            <div class="field">
+              <label for="b-role">Your role</label>
+              <select id="b-role" required>
+                <option value="">Select role</option>
+                <option>Founder / Owner</option><option>Procurement Manager</option><option>Purchase Head</option>
+                <option>Operations Manager</option><option>Consultant</option><option>Other</option>
+              </select>
+            </div>
+          </div>
+          <div class="field">
+            <label for="b-int">What do you want to source?</label>
+            <select id="b-int">
+              <option>Manufacturing</option><option>Machinery</option><option>Electronics</option>
+              <option>Construction material</option><option>Textiles</option><option>Services</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="b-pw">Create password</label>
+            <input id="b-pw" type="password" placeholder="Minimum 8 characters" required>
+          </div>
+          <label class="fcheck" style="margin-bottom:18px"><input type="checkbox" required> I agree to the <a href="terms.html">Terms of Use</a> and <a href="privacy.html">Privacy Policy</a></label>
+          <button class="btn btn--accent btn--block btn--lg" type="submit">Create Buyer Account</button>
+        </form>
+
+        <p style="text-align:center;margin:20px 0 0;font-size:.87rem;color:var(--ink-500)">Already have an account? <a href="login.html">Login</a></p>
+      </div>
+
+      <div class="authcard">
+        <h2 style="font-size:1.4rem">Why join BizBook?</h2>
+        <ul class="ticks" style="margin-top:1.2em">
+          <li><svg viewBox="0 0 24 24"><path d="m5 12.5 4.5 4.5L19 7"/></svg><div><strong>Free verified badge</strong><span>Build trust instantly with buyers who check credentials.</span></div></li>
+          <li><svg viewBox="0 0 24 24"><path d="m5 12.5 4.5 4.5L19 7"/></svg><div><strong>100K+ monthly leads</strong><span>Qualified enquiries routed straight to your inbox.</span></div></li>
+          <li><svg viewBox="0 0 24 24"><path d="m5 12.5 4.5 4.5L19 7"/></svg><div><strong>Pan-India + 25 countries</strong><span>Reach domestic buyers and export enquiries alike.</span></div></li>
+          <li><svg viewBox="0 0 24 24"><path d="m5 12.5 4.5 4.5L19 7"/></svg><div><strong>No listing fees</strong><span>Free forever on the Starter plan. Upgrade only when you scale.</span></div></li>
+        </ul>
+        <div class="sepr">or sign up with</div>
+        <div style="display:grid;gap:10px">
+          <button class="btn btn--outline btn--block" type="button" data-demo="Google sign-in is not wired up in this demo.">Continue with Google</button>
+          <button class="btn btn--outline btn--block" type="button" data-demo="LinkedIn sign-in is not wired up in this demo.">Continue with LinkedIn</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__bottom" style="border-top:none">
+      <p>&copy; 2016&ndash;2026 BizBook Marketplace Pvt. Ltd. All rights reserved.</p>
+      <nav class="footer__legal" aria-label="Legal"><a href="terms.html">Terms of Use</a><a href="privacy.html">Privacy Policy</a><a href="help.html">Help Centre</a></nav>
+    </div>
+  </div>
+</footer>
+
+<button class="totop" id="toTop" aria-label="Back to top"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6"/></svg></button>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script src="../assets/js/main.js"></script>
+</body>
+</html>

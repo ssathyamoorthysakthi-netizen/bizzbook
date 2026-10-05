@@ -1,0 +1,25 @@
+{
+  "name": "bizbook-server",
+  "version": "1.0.0",
+  "description": "BizBook marketplace API (Express + MongoDB + JWT)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "seed": "node seed-mongo.js",
+    "seed:force": "node seed-mongo.js --force"
+  },
+  "keywords": [
+    "b2b",
+    "marketplace",
+    "express",
+    "mongodb"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "express": "^4.22.3",
+    "mongodb": "^6.21.0"
+  }
+}

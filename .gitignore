@@ -1,0 +1,47 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Build output
+web/dist/
+dist/
+build/
+.cache/
+.vite/
+
+# Environment — NEVER commit real secrets
+.env
+.env.local
+.env.*.local
+!.env.example
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+server/out.log
+server/err.log
+server/pid.txt
+
+# Local database artefacts (MongoDB is used; these are legacy SQLite files)
+server/data/
+*.db
+*.sqlite
+*.sqlite3
+
+# Editor / OS
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Misc
+coverage/
+.nyc_output/
+tmp/
+temp/

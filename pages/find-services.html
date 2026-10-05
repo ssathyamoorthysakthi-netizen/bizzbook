@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Find Service Providers Across India | BizBook</title>
+<meta name="description" content="Discover verified service providers in India — digital marketing, logistics, construction, consulting, installation and more.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%23f26522'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body>
+
+<header class="header is-stuck" id="header">
+  <div class="container header__inner">
+    <a class="brand" href="../index.html" aria-label="BizBook home">
+      <span class="brand__mark" aria-hidden="true"><svg viewBox="0 0 32 32" width="32" height="32"><rect width="32" height="32" rx="9" fill="#f26522"/><path d="M10.5 8.5h10.2a2.3 2.3 0 0 1 2.3 2.3v12.7h-10a2.5 2.5 0 0 1-2.5-2.5V8.5z" fill="#fff"/><path d="M13.2 12.6h6.6M13.2 16h6.6M13.2 19.4h4" stroke="#f26522" stroke-width="1.7" stroke-linecap="round"/></svg></span>
+      <span class="brand__text"><span class="brand__name">BizBook</span><span class="brand__tag">India's Business Marketplace</span></span>
+    </a>
+    <nav class="nav" aria-label="Primary">
+      <ul class="nav__list">
+        <li><a href="find-businesses.html">Find Businesses</a></li>
+        <li><a href="find-products.html">Find Products</a></li>
+        <li><a href="find-services.html">Find Services</a></li>
+        <li><a href="for-buyers.html">For Buyers</a></li>
+        <li><a href="for-businesses.html">For Businesses</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+      </ul>
+    </nav>
+    <div class="header__actions">
+      <a class="header__login" href="login.html">Login</a>
+      <a class="header__signup" href="signup.html">Sign Up</a>
+      <a class="btn btn--accent" href="list-your-business.html">List Your Business</a>
+    </div>
+    <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<div class="mobilemenu" id="mobileMenu" hidden>
+  <ul class="mmenu__nav">
+    <li><a href="find-businesses.html">Find Businesses</a></li>
+    <li><a href="find-products.html">Find Products</a></li>
+    <li><a href="find-services.html">Find Services</a></li>
+    <li><a href="for-buyers.html">For Buyers</a></li>
+    <li><a href="for-businesses.html">For Businesses</a></li>
+    <li><a href="resources.html">Resources</a></li>
+    <li><a href="pricing.html">Pricing</a></li>
+  </ul>
+  <div class="mmenu__auth">
+    <a class="btn btn--ghost btn--block" href="login.html">Login</a>
+    <a class="btn btn--accent btn--block" href="signup.html">Sign Up Free</a>
+  </div>
+  <a class="btn btn--primary btn--block" href="list-your-business.html">List Your Business</a>
+</div>
+
+<section class="pagehero">
+  <div class="container">
+    <nav class="crumbs" aria-label="Breadcrumb"><a href="../index.html">Home</a><span>/</span><b>Find Services</b></nav>
+    <h1>Find Professional Service Providers</h1>
+    <p>From digital marketing agencies to industrial contractors and logistics partners — hire verified experts with proven delivery records.</p>
+    <form class="hero__search" id="heroSearch" autocomplete="off" style="max-width:760px">
+      <div class="hero__row">
+        <div class="hero__input">
+          <svg class="hero__input-i" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.6-3.6"/></svg>
+          <input type="search" name="q" placeholder="Service needed, e.g. Digital Marketing" aria-label="Search services">
+        </div>
+        <div class="hero__select">
+          <svg class="hero__select-i" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><circle cx="12" cy="10" r="2.6"/></svg>
+          <select name="location" aria-label="Location"><option>All India</option><option>Mumbai, Maharashtra</option><option>Bengaluru, Karnataka</option><option>Delhi NCR</option><option>Hyderabad, Telangana</option></select>
+        </div>
+        <button class="btn btn--accent btn--lg" type="submit">Search</button>
+      </div>
+      <div class="hero__suggest" id="heroSuggest" hidden></div>
+      <div class="hero__quick">
+        <span>Popular:</span>
+        <button type="button" data-q="Digital Marketing">Digital Marketing</button>
+        <button type="button" data-q="SEO Services">SEO Services</button>
+        <button type="button" data-q="Logistics">Logistics</button>
+        <button type="button" data-q="Interior Designer">Interior Designer</button>
+        <button type="button" data-q="Web Development">Web Development</button>
+      </div>
+    </form>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="grid-4" style="margin-bottom:36px">
+      <article class="panel">
+        <span class="pop__ico t-dm" aria-hidden="true" style="width:44px;height:44px;margin-bottom:12px"><svg viewBox="0 0 24 24"><path d="M4 14v3.5A1.5 1.5 0 0 0 5.5 19h13a1.5 1.5 0 0 0 1.5-1.5V14"/><path d="M12 15V4"/><path d="M8 8.5 12 4l4 4.5"/></svg></span>
+        <h3 style="font-size:1rem">Digital Marketing</h3>
+        <p style="font-size:.84rem;color:var(--ink-600);margin:0">12,900 providers &middot; SEO, ads, social</p>
+      </article>
+      <article class="panel">
+        <span class="pop__ico t-con" aria-hidden="true" style="width:44px;height:44px;margin-bottom:12px"><svg viewBox="0 0 24 24"><path d="M4 20h16"/><path d="M6 20v-7l5-3.5L16 13v7"/></svg></span>
+        <h3 style="font-size:1rem">Construction</h3>
+        <p style="font-size:.84rem;color:var(--ink-600);margin:0">18,500 contractors &middot; Turnkey projects</p>
+      </article>
+      <article class="panel">
+        <span class="pop__ico t-solar" aria-hidden="true" style="width:44px;height:44px;margin-bottom:12px"><svg viewBox="0 0 24 24"><path d="M4 7h16l-1 12H5L4 7z"/><path d="M9 12h6M12 9v6"/></svg></span>
+        <h3 style="font-size:1rem">Installation &amp; Setup</h3>
+        <p style="font-size:.84rem;color:var(--ink-600);margin:0">8,400 technicians &middot; Onsite service</p>
+      </article>
+      <article class="panel">
+        <span class="pop__ico t-machinery" aria-hidden="true" style="width:44px;height:44px;margin-bottom:12px"><svg viewBox="0 0 24 24"><path d="M3 8h13v8H3z"/><path d="M16 11h3l2 2v3h-5"/><circle cx="7" cy="18" r="1.6"/><circle cx="17" cy="18" r="1.6"/></svg></span>
+        <h3 style="font-size:1rem">Logistics &amp; Freight</h3>
+        <p style="font-size:.84rem;color:var(--ink-600);margin:0">6,200 partners &middot; Pan-India</p>
+      </article>
+    </div>
+
+    <div class="resultbar">
+      <p class="resultbar__q">Showing <b>942</b> service providers</p>
+      <div class="resultbar__right">
+        <select class="sortsel" aria-label="Sort results"><option>Best Match</option><option>Highest Rated</option><option>Budget: Low to High</option><option>Fastest Response</option></select>
+      </div>
+    </div>
+
+    <div class="listbar">
+      <aside class="filters" aria-label="Filters">
+        <div class="panel fgroup">
+          <h4>Service Category</h4>
+          <ul>
+            <li><label class="fcheck"><input type="checkbox" checked> Marketing &amp; Advertising</label></li>
+            <li><label class="fcheck"><input type="checkbox"> IT &amp; Software</label></li>
+            <li><label class="fcheck"><input type="checkbox"> Construction &amp; Interior</label></li>
+            <li><label class="fcheck"><input type="checkbox"> Logistics &amp; Supply Chain</label></li>
+            <li><label class="fcheck"><input type="checkbox"> Manpower &amp; Staffing</label></li>
+            <li><label class="fcheck"><input type="checkbox"> Professional Consulting</label></li>
+          </ul>
+        </div>
+        <div class="panel fgroup">
+          <h4>Engagement Model</h4>
+          <ul>
+            <li><label class="fcheck"><input type="checkbox"> Project Based</label></li>
+            <li><label class="fcheck"><input type="checkbox"> Retainer / Monthly</label></li>
+            <li><label class="fcheck"><input type="checkbox"> Onsite Support</label></li>
+            <li><label class="fcheck"><input type="checkbox"> Remote Only</label></li>
+          </ul>
+        </div>
+        <div class="panel fgroup">
+          <h4>Budget Range</h4>
+          <ul>
+            <li><label class="fcheck"><input type="checkbox"> Under &#8377;50,000</label></li>
+            <li><label class="fcheck"><input type="checkbox"> &#8377;50,000 &ndash; &#8377;2,00,000</label></li>
+            <li><label class="fcheck"><input type="checkbox"> &#8377;2,00,000 &ndash; &#8377;10,00,000</label></li>
+            <li><label class="fcheck"><input type="checkbox"> Above &#8377;10,00,000</label></li>
+          </ul>
+        </div>
+      </aside>
+
+      <div>
+        <article class="plisting">
+          <span class="plisting__img t-dm" aria-hidden="true"></span>
+          <div>
+            <h3>GrowthWave Digital &mdash; Performance Marketing</h3>
+            <p>Bengaluru, Karnataka &middot; Google Partner &middot; Meta Business Partner</p>
+            <div class="plisting__meta"><span class="chip chip--green">Verified</span><span class="chip">4.9 Rating</span><span class="chip">180+ Clients</span><span class="chip">2 Hr Response</span></div>
+          </div>
+          <div class="plisting__price"><strong>&#8377;65,000</strong><em>per month</em><a class="btn btn--primary btn--sm" href="business.html" style="margin-top:10px">Enquire</a></div>
+        </article>
+
+        <article class="plisting">
+          <span class="plisting__img t-con" aria-hidden="true"></span>
+          <div>
+            <h3>Vertex BuildTech &mdash; Turnkey Construction</h3>
+            <p>Pune, Maharashtra &middot; Civil &middot; PEB &middot; Interiors</p>
+            <div class="plisting__meta"><span class="chip chip--green">Verified</span><span class="chip">4.8 Rating</span><span class="chip">120+ Projects</span><span class="chip">PMP Certified</span></div>
+          </div>
+          <div class="plisting__price"><strong>On Request</strong><em>site visit free</em><a class="btn btn--primary btn--sm" href="business.html" style="margin-top:10px">Enquire</a></div>
+        </article>
+
+        <article class="plisting">
+          <span class="plisting__img t-machinery" aria-hidden="true"></span>
+          <div>
+            <h3>TransLink Logistics &mdash; FTL &amp; warehousing</h3>
+            <p>Nagpur, Maharashtra &middot; Pan-India network &middot; GPS tracked</p>
+            <div class="plisting__meta"><span class="chip chip--green">Verified</span><span class="chip">4.7 Rating</span><span class="chip">18 Warehouses</span><span class="chip">24/7 Tracking</span></div>
+          </div>
+          <div class="plisting__price"><strong>&#8377;22,000</strong><em>per truck load</em><a class="btn btn--primary btn--sm" href="business.html" style="margin-top:10px">Enquire</a></div>
+        </article>
+
+        <article class="plisting">
+          <span class="plisting__img t-tex" aria-hidden="true"></span>
+          <div>
+            <h3>CodeCraft Labs &mdash; Custom Software</h3>
+            <p>Hyderabad, Telangana &middot; Web &amp; Mobile &middot; Cloud &amp; DevOps</p>
+            <div class="plisting__meta"><span class="chip chip--green">Verified</span><span class="chip">4.8 Rating</span><span class="chip">ISO 27001</span><span class="chip">NDA Ready</span></div>
+          </div>
+          <div class="plisting__price"><strong>&#8377;1,80,000</strong><em>project based</em><a class="btn btn--primary btn--sm" href="business.html" style="margin-top:10px">Enquire</a></div>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__bottom" style="border-top:none">
+      <p>&copy; 2016&ndash;2026 BizBook Marketplace Pvt. Ltd. All rights reserved.</p>
+      <nav class="footer__legal" aria-label="Legal"><a href="terms.html">Terms of Use</a><a href="privacy.html">Privacy Policy</a><a href="help.html">Help Centre</a></nav>
+    </div>
+  </div>
+</footer>
+
+<button class="totop" id="toTop" aria-label="Back to top"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6"/></svg></button>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script src="../assets/js/main.js"></script>
+</body>
+</html>

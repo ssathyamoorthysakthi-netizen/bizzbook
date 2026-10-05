@@ -1,0 +1,950 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BizBook — India's Business Marketplace | Businesses, Products & Services</title>
+<meta name="description" content="BizBook connects businesses, buyers, suppliers, manufacturers and service providers across India. Discover verified businesses, products and services near you.">
+<meta name="theme-color" content="#0b1c3d">
+<meta property="og:title" content="BizBook — India's Business Marketplace">
+<meta property="og:description" content="Connect with trusted businesses, suppliers, manufacturers and service providers from across India.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23f26522'/%3E%3Cpath d='M10 9h11a2 2 0 0 1 2 2v12H12a2 2 0 0 1-2-2V9z' fill='%23fff'/%3E%3Cpath d='M13 13h7M13 16.5h7M13 20h4' stroke='%23f26522' stroke-width='1.6' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<div class="topbar">
+  <div class="container topbar__inner">
+    <p class="topbar__msg"><span class="topbar__badge">India's Business Marketplace</span> Connecting 500,000+ verified businesses with 2 million+ buyers nationwide.</p>
+    <nav class="topbar__links" aria-label="Utility">
+      <a href="pages/for-businesses.html">Become a Supplier</a>
+      <a href="pages/help.html">Help Centre</a>
+      <a href="pages/resources.html">Business Tools</a>
+      <a href="#" class="topbar__lang">&#127760; English</a>
+    </nav>
+  </div>
+</div>
+
+<header class="header" id="header">
+  <div class="container header__inner">
+
+    <a class="brand" href="index.html" aria-label="BizBook home">
+      <span class="brand__mark" aria-hidden="true">
+        <svg viewBox="0 0 32 32" width="32" height="32"><rect width="32" height="32" rx="9" fill="url(#bg1)"/><path d="M10.5 8.5h10.2a2.3 2.3 0 0 1 2.3 2.3v12.7h-10a2.5 2.5 0 0 1-2.5-2.5V8.5z" fill="#fff"/><path d="M13.2 12.6h6.6M13.2 16h6.6M13.2 19.4h4" stroke="#f26522" stroke-width="1.7" stroke-linecap="round"/><defs><linearGradient id="bg1" x1="0" y1="0" x2="32" y2="32"><stop stop-color="#ff8a3d"/><stop offset="1" stop-color="#e14d0a"/></linearGradient></defs></svg>
+      </span>
+      <span class="brand__text">
+        <span class="brand__name">BizBook</span>
+        <span class="brand__tag">India's Business Marketplace</span>
+      </span>
+    </a>
+
+    <nav class="nav" id="primaryNav" aria-label="Primary">
+      <ul class="nav__list">
+        <li><a href="pages/find-businesses.html">Find Businesses</a></li>
+        <li><a href="pages/find-products.html">Find Products</a></li>
+        <li><a href="pages/find-services.html">Find Services</a></li>
+        <li><a href="pages/for-buyers.html">For Buyers</a></li>
+        <li><a href="pages/for-businesses.html">For Businesses</a></li>
+        <li><a href="pages/resources.html">Resources</a></li>
+        <li><a href="pages/pricing.html">Pricing</a></li>
+      </ul>
+    </nav>
+
+    <form class="hsearch" role="search" id="headerSearch" autocomplete="off">
+      <div class="hsearch__field">
+        <svg class="hsearch__icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.6-3.6"/></svg>
+        <input type="search" name="q" placeholder="Search businesses, products, services..." aria-label="Search businesses, products, services">
+      </div>
+      <div class="hsearch__loc">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><circle cx="12" cy="10" r="2.6"/></svg>
+        <select name="location" aria-label="Select location">
+          <option>All India</option>
+          <option>Mumbai, Maharashtra</option>
+          <option>Delhi NCR</option>
+          <option>Bengaluru, Karnataka</option>
+          <option>Chennai, Tamil Nadu</option>
+          <option>Kolkata, West Bengal</option>
+          <option>Hyderabad, Telangana</option>
+          <option>Pune, Maharashtra</option>
+          <option>Ahmedabad, Gujarat</option>
+          <option>Coimbatore, Tamil Nadu</option>
+          <option>Jaipur, Rajasthan</option>
+          <option>Indore, Madhya Pradesh</option>
+          <option>Chandigarh, Punjab</option>
+        </select>
+      </div>
+      <button class="btn btn--primary hsearch__btn" type="submit">Search</button>
+      <div class="suggest" id="headerSuggest" role="listbox" aria-label="Search suggestions" hidden></div>
+    </form>
+
+    <div class="header__actions">
+      <a class="header__login" href="pages/login.html">Login</a>
+      <a class="header__signup" href="pages/signup.html">Sign Up</a>
+      <a class="btn btn--accent" href="pages/list-your-business.html">
+        <svg viewBox="0 0 24 24" aria-hidden="true" class="btn__i"><path d="M12 5v14M5 12h14"/></svg>
+        List Your Business
+      </a>
+    </div>
+
+    <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<div class="mobilemenu" id="mobileMenu" hidden>
+  <form class="msearch" role="search" id="mobileSearch">
+    <div class="hsearch__field">
+      <svg class="hsearch__icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.6-3.6"/></svg>
+      <input type="search" name="q" placeholder="Search businesses, products, services..." aria-label="Search">
+    </div>
+    <select name="location" class="mselect" aria-label="Select location">
+      <option>All India</option>
+      <option>Mumbai, Maharashtra</option>
+      <option>Delhi NCR</option>
+      <option>Bengaluru, Karnataka</option>
+      <option>Chennai, Tamil Nadu</option>
+      <option>Kolkata, West Bengal</option>
+      <option>Hyderabad, Telangana</option>
+      <option>Pune, Maharashtra</option>
+      <option>Ahmedabad, Gujarat</option>
+    </select>
+    <button class="btn btn--primary btn--block" type="submit">Search</button>
+  </form>
+  <ul class="mmenu__nav">
+    <li><a href="pages/find-businesses.html">Find Businesses</a></li>
+    <li><a href="pages/find-products.html">Find Products</a></li>
+    <li><a href="pages/find-services.html">Find Services</a></li>
+    <li><a href="pages/for-buyers.html">For Buyers</a></li>
+    <li><a href="pages/for-businesses.html">For Businesses</a></li>
+    <li><a href="pages/resources.html">Resources</a></li>
+    <li><a href="pages/pricing.html">Pricing</a></li>
+  </ul>
+  <div class="mmenu__auth">
+    <a class="btn btn--ghost btn--block" href="pages/login.html">Login</a>
+    <a class="btn btn--accent btn--block" href="pages/signup.html">Sign Up Free</a>
+  </div>
+  <a class="btn btn--primary btn--block" href="pages/list-your-business.html">List Your Business</a>
+</div>
+
+<main id="main">
+
+  <section class="hero">
+    <div class="hero__bg" aria-hidden="true">
+      <div class="hero__grid"></div>
+      <div class="hero__glow hero__glow--1"></div>
+      <div class="hero__glow hero__glow--2"></div>
+      <svg class="hero__blob" viewBox="0 0 500 500"><path d="M421 132c34 61 33 143 2 197s-89 97-155 117-136 36-180 3S21 322 25 258s32-114 84-151S249 60 296 71s91 0 125 61z" fill="url(#hg)"/><defs><linearGradient id="hg" x1="0" y1="0" x2="500" y2="500"><stop stop-color="#ff8a3d" stop-opacity=".18"/><stop offset="1" stop-color="#1e56c4" stop-opacity=".14"/></linearGradient></defs></svg>
+    </div>
+
+    <div class="container hero__inner">
+      <div class="hero__copy">
+        <span class="eyebrow reveal">
+          <span class="eyebrow__dot"></span>
+          Trusted by 500,000+ businesses across 25+ countries
+        </span>
+        <h1 class="hero__title reveal" data-delay="1">
+          Discover Businesses, <span class="grad">Products &amp; Services</span> Across India
+        </h1>
+        <p class="hero__sub reveal" data-delay="2">
+          Connect with trusted businesses, suppliers, manufacturers and service providers from across India — verified, rated and ready to do business.
+        </p>
+
+        <form class="hero__search reveal" data-delay="3" id="heroSearch" autocomplete="off">
+          <div class="hero__tabs" role="tablist" aria-label="Search type">
+            <button type="button" class="hero__tab is-active" role="tab" aria-selected="true" data-type="all">All</button>
+            <button type="button" class="hero__tab" role="tab" aria-selected="false" data-type="business">Businesses</button>
+            <button type="button" class="hero__tab" role="tab" aria-selected="false" data-type="product">Products</button>
+            <button type="button" class="hero__tab" role="tab" aria-selected="false" data-type="service">Services</button>
+          </div>
+          <div class="hero__row">
+            <div class="hero__input">
+              <svg class="hero__input-i" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.6-3.6"/></svg>
+              <input type="search" name="q" placeholder="Search for products, businesses or services" aria-label="Search for products, businesses or services">
+            </div>
+            <div class="hero__select">
+              <svg class="hero__select-i" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><circle cx="12" cy="10" r="2.6"/></svg>
+              <select name="location" aria-label="Location">
+                <option>All India</option>
+                <option>Mumbai, Maharashtra</option>
+                <option>Delhi NCR</option>
+                <option>Bengaluru, Karnataka</option>
+                <option>Chennai, Tamil Nadu</option>
+                <option>Kolkata, West Bengal</option>
+                <option>Hyderabad, Telangana</option>
+                <option>Pune, Maharashtra</option>
+                <option>Ahmedabad, Gujarat</option>
+                <option>Coimbatore, Tamil Nadu</option>
+                <option>Jaipur, Rajasthan</option>
+                <option>Indore, Madhya Pradesh</option>
+                <option>Chandigarh, Punjab</option>
+              </select>
+            </div>
+            <button class="btn btn--accent btn--lg" type="submit">Search</button>
+          </div>
+          <div class="hero__suggest" id="heroSuggest" hidden></div>
+          <div class="hero__quick">
+            <span>Popular:</span>
+            <button type="button" data-q="CNC Machine">CNC Machine</button>
+            <button type="button" data-q="Solar Panel">Solar Panel</button>
+            <button type="button" data-q="Packaging Boxes">Packaging Boxes</button>
+            <button type="button" data-q="Digital Marketing">Digital Marketing</button>
+            <button type="button" data-q="Hospital Equipment">Hospital Equipment</button>
+          </div>
+        </form>
+
+        <div class="hero__cta reveal" data-delay="4">
+          <a class="btn btn--primary btn--lg" href="pages/find-businesses.html">
+            Explore Businesses
+            <svg viewBox="0 0 24 24" class="btn__i" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+          <a class="btn btn--light btn--lg" href="pages/list-your-business.html">List Your Business Free</a>
+        </div>
+
+        <ul class="hero__trust reveal" data-delay="5">
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l7.5 3v5.4c0 4.6-3.1 8.4-7.5 9.6-4.4-1.2-7.5-5-7.5-9.6V6L12 3z"/><path d="m9 12 2.2 2.2L15.4 10"/></svg> Verified listings</li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.4 2"/></svg> 24/7 lead support</li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h16M12 4v16"/></svg> Direct supplier contact</li>
+        </ul>
+      </div>
+
+      <div class="hero__visual" aria-hidden="true">
+        <div class="floatcard floatcard--a">
+          <div class="floatcard__thumb t-machinery"></div>
+          <div class="floatcard__body">
+            <strong>Shreeji CNC Works</strong>
+            <span>Ahmedabad, Gujarat</span>
+            <div class="floatcard__meta">
+              <span class="chip chip--green">Verified</span>
+              <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733; 4.9</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="floatcard floatcard--b">
+          <div class="floatcard__head">
+            <span class="avatar av-solar">SP</span>
+            <div>
+              <strong>SunRISE Solar</strong>
+              <span>Jodhpur, Rajasthan</span>
+            </div>
+          </div>
+          <div class="floatcard__stat">
+            <span class="floatcard__kpi">450+</span>
+            <span class="floatcard__kpil">Projects Delivered</span>
+          </div>
+          <div class="progress"><span style="--w:82%"></span></div>
+          <small>Response rate 98%</small>
+        </div>
+
+        <div class="floatcard floatcard--c">
+          <span class="floatcard__icon t-promo">
+            <svg viewBox="0 0 24 24"><path d="M20 7h-3V5a2 2 0 0 0-2-2H9a2 2 0 0 0-2 2v2H4a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1z"/><path d="M9 7h6"/></svg>
+          </span>
+          <div>
+            <strong>12 New Enquiries</strong>
+            <span>From buyers in 4 cities</span>
+          </div>
+        </div>
+
+        <span class="pin pin--1"><svg viewBox="0 0 24 24"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><circle cx="12" cy="10" r="2.6"/></svg></span>
+        <span class="pin pin--2"><svg viewBox="0 0 24 24"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><circle cx="12" cy="10" r="2.6"/></svg></span>
+        <span class="pin pin--3"><svg viewBox="0 0 24 24"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><circle cx="12" cy="10" r="2.6"/></svg></span>
+
+        <div class="hero__panel">
+          <div class="hero__panel-row">
+            <span class="dotgrid"></span>
+            <div>
+              <strong>India's largest B2B network</strong>
+              <span>28 states &amp; 8 union territories</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <div class="marquee__row">
+          <span>Textile Manufacturers</span><i>•</i><span>CNC Machining</span><i>•</i><span>Solar Panels</span><i>•</i><span>Packaging &amp; Printing</span><i>•</i><span>Hospital Equipment</span><i>•</i><span>Digital Marketing</span><i>•</i><span>Construction Material</span><i>•</i><span>Food Processing</span><i>•</i><span>Logistics &amp; Freight</span><i>•</i>
+        </div>
+        <div class="marquee__row">
+          <span>Textile Manufacturers</span><i>•</i><span>CNC Machining</span><i>•</i><span>Solar Panels</span><i>•</i><span>Packaging &amp; Printing</span><i>•</i><span>Hospital Equipment</span><i>•</i><span>Digital Marketing</span><i>•</i><span>Construction Material</span><i>•</i><span>Food Processing</span><i>•</i><span>Logistics &amp; Freight</span><i>•</i>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="explore">
+    <div class="container">
+      <header class="section__head reveal">
+        <span class="kicker">How you buy &amp; sell</span>
+        <h2 class="section__title">Explore BizBook</h2>
+        <p class="section__sub">Whether you are sourcing at factory scale or hiring a local vendor, BizBook gives you the right marketplace for the job.</p>
+      </header>
+
+      <div class="explore">
+        <a class="xcard xcard--b2b reveal" href="pages/find-businesses.html?type=b2b">
+          <div class="xcard__glow" aria-hidden="true"></div>
+          <span class="xcard__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M3 21h18"/><path d="M5 21V8l5-3v16"/><path d="M14 21V11l5 2.5V21"/><path d="M7.5 11h.01M7.5 14h.01M7.5 17h.01M16.5 14h.01M16.5 17h.01"/></svg>
+          </span>
+          <span class="xcard__tag">B2B</span>
+          <h3>Business to Business</h3>
+          <p>Connect manufacturers, suppliers, wholesalers and businesses.</p>
+          <ul class="xcard__points">
+            <li>Bulk pricing &amp; MOQ details</li>
+            <li>Factory-direct quotations</li>
+          </ul>
+          <span class="xcard__cta">Explore B2B <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          <span class="xcard__count">182,400+ listings</span>
+        </a>
+
+        <a class="xcard xcard--b2c reveal" data-delay="1" href="pages/find-businesses.html?type=b2c">
+          <div class="xcard__glow" aria-hidden="true"></div>
+          <span class="xcard__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M6 8h12l-1 12H7L6 8z"/><path d="M9.5 8V6.5a2.5 2.5 0 0 1 5 0V8"/><path d="M9.5 12h5"/></svg>
+          </span>
+          <span class="xcard__tag">B2C</span>
+          <h3>Business to Consumer</h3>
+          <p>Discover products and services directly from businesses.</p>
+          <ul class="xcard__points">
+            <li>Retail-ready listings</li>
+            <li>Transparent pricing</li>
+          </ul>
+          <span class="xcard__cta">Explore B2C <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          <span class="xcard__count">96,700+ listings</span>
+        </a>
+
+        <a class="xcard xcard--d2c reveal" data-delay="2" href="pages/find-businesses.html?type=d2c">
+          <div class="xcard__glow" aria-hidden="true"></div>
+          <span class="xcard__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M4 7h16l-1.4 11.2a2 2 0 0 1-2 1.8H7.4a2 2 0 0 1-2-1.8L4 7z"/><path d="M8.5 7 12 3l3.5 4"/><path d="M9 12.5h6"/></svg>
+          </span>
+          <span class="xcard__tag">D2C</span>
+          <h3>Direct to Consumer</h3>
+          <p>Help brands connect directly with customers.</p>
+          <ul class="xcard__points">
+            <li>Brand storefronts</li>
+            <li>Direct customer enquiries</li>
+          </ul>
+          <span class="xcard__cta">Explore D2C <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          <span class="xcard__count">54,100+ listings</span>
+        </a>
+
+        <a class="xcard xcard--local reveal" data-delay="3" href="pages/find-businesses.html?type=local">
+          <div class="xcard__glow" aria-hidden="true"></div>
+          <span class="xcard__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><circle cx="12" cy="10" r="2.6"/></svg>
+          </span>
+          <span class="xcard__tag">Local Search</span>
+          <h3>Find Local Businesses</h3>
+          <p>Discover trusted businesses and services near you.</p>
+          <ul class="xcard__points">
+            <li>Map &amp; distance search</li>
+            <li>City, state and pincode filters</li>
+          </ul>
+          <span class="xcard__cta">Find Nearby <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          <span class="xcard__count">167,800+ listings</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="stats" id="stats">
+    <div class="container">
+      <header class="section__head section__head--light reveal">
+        <span class="kicker">Platform impact</span>
+        <h2 class="section__title">The network India's businesses run on</h2>
+        <p class="section__sub">Real numbers from live marketplace activity, updated every month.</p>
+      </header>
+
+      <div class="stats__grid">
+        <div class="stat reveal">
+          <span class="stat__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 21h18"/><path d="M5 21V8l5-3v16"/><path d="M14 21V11l5 2.5V21"/></svg></span>
+          <span class="stat__num" data-count="500" data-suffix="K+">0</span>
+          <span class="stat__label">Businesses</span>
+          <span class="stat__note">Verified &amp; active listings</span>
+        </div>
+        <div class="stat reveal" data-delay="1">
+          <span class="stat__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M20.5 8.5 12 4 3.5 8.5 12 13l8.5-4.5z"/><path d="M3.5 12.5 12 17l8.5-4.5"/><path d="M3.5 16.5 12 21l8.5-4.5"/></svg></span>
+          <span class="stat__num" data-count="10" data-suffix="M+">0</span>
+          <span class="stat__label">Products &amp; Services</span>
+          <span class="stat__note">Catalogue listings</span>
+        </div>
+        <div class="stat reveal" data-delay="2">
+          <span class="stat__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.2"/><path d="M3 20a6 6 0 0 1 12 0"/><path d="M16 5.5a3.2 3.2 0 0 1 0 5.6"/><path d="M17.5 14.6A6 6 0 0 1 21 20"/></svg></span>
+          <span class="stat__num" data-count="2" data-suffix="M+">0</span>
+          <span class="stat__label">Buyers</span>
+          <span class="stat__note">Monthly active buyers</span>
+        </div>
+        <div class="stat reveal" data-delay="3">
+          <span class="stat__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 5h16v11H8l-4 4V5z"/><path d="M8 9h8M8 12.5h5"/></svg></span>
+          <span class="stat__num" data-count="100" data-suffix="K+">0</span>
+          <span class="stat__label">Monthly Leads</span>
+          <span class="stat__note">Delivered to businesses</span>
+        </div>
+        <div class="stat reveal" data-delay="4">
+          <span class="stat__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3c2.6 2.6 3.9 5.6 3.9 9S14.6 18.4 12 21c-2.6-2.6-3.9-5.6-3.9-9S9.4 5.6 12 3z"/></svg></span>
+          <span class="stat__num" data-count="25" data-suffix="+">0</span>
+          <span class="stat__label">Countries</span>
+          <span class="stat__note">Export-ready listings</span>
+        </div>
+        <div class="stat reveal" data-delay="5">
+          <span class="stat__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3l2.6 5.6 6 .8-4.4 4.2 1.1 6L12 16.8 6.7 19.6l1.1-6L3.4 9.4l6-.8L12 3z"/></svg></span>
+          <span class="stat__num" data-count="98" data-suffix="%">0</span>
+          <span class="stat__label">Customer Satisfaction</span>
+          <span class="stat__note">Based on 84,000 ratings</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--soft" id="popular">
+    <div class="container">
+      <header class="section__head reveal">
+        <span class="kicker">Trending right now</span>
+        <h2 class="section__title">Popular Searches</h2>
+        <p class="section__sub">The categories buyers are searching for most this month.</p>
+      </header>
+
+      <div class="pops" id="pops">
+        <a class="pop" href="pages/find-products.html?q=CNC+Machine" data-cat="Machinery">
+          <span class="pop__ico t-cnc" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3.2"/><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6 7.8 7.8M16.2 16.2l2.2 2.2M18.4 5.6l-2.2 2.2M7.8 16.2l-2.2 2.2"/></svg></span>
+          <span class="pop__body">
+            <strong>CNC Machine</strong>
+            <em>4,820 businesses</em>
+          </span>
+          <span class="pop__trend"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 17l6-6 4 4 6-6"/><path d="M15 9h5v5"/></svg> 32%</span>
+        </a>
+        <a class="pop" href="pages/find-products.html?q=Solar+Panel" data-cat="Electronics">
+          <span class="pop__ico t-solar" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3.5" y="5" width="17" height="11" rx="1.6"/><path d="M9 5 7 16M15 5l-2 11M3.5 10.5h17"/><path d="M10 20h4"/></svg></span>
+          <span class="pop__body">
+            <strong>Solar Panel</strong>
+            <em>2,140 businesses</em>
+          </span>
+          <span class="pop__trend"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 17l6-6 4 4 6-6"/><path d="M15 9h5v5"/></svg> 27%</span>
+        </a>
+        <a class="pop" href="pages/find-products.html?q=Packaging" data-cat="Manufacturing">
+          <span class="pop__ico t-pack" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3 4 7v10l8 4 8-4V7l-8-4z"/><path d="M4 7l8 4 8-4M12 11v10"/></svg></span>
+          <span class="pop__body">
+            <strong>Packaging</strong>
+            <em>6,470 businesses</em>
+          </span>
+          <span class="pop__trend"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 17l6-6 4 4 6-6"/><path d="M15 9h5v5"/></svg> 19%</span>
+        </a>
+        <a class="pop" href="pages/find-products.html?q=Textile" data-cat="Textile">
+          <span class="pop__ico t-tex" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 6h16l-1.6 4.4a3 3 0 0 1-2.9 2H7.5a3 3 0 0 1-2.9-2L4 6z"/><path d="M8 12.4V20h8v-7.6"/></svg></span>
+          <span class="pop__body">
+            <strong>Textile</strong>
+            <em>9,320 businesses</em>
+          </span>
+          <span class="pop__trend"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 17l6-6 4 4 6-6"/><path d="M15 9h5v5"/></svg> 24%</span>
+        </a>
+        <a class="pop" href="pages/find-products.html?q=Hospital+Equipment" data-cat="Healthcare">
+          <span class="pop__ico t-hosp" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 8h16v11a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V8z"/><path d="M9 8V5.5a1.5 1.5 0 0 1 1.5-1.5h3A1.5 1.5 0 0 1 15 5.5V8"/><path d="M12 11.5v5M9.5 14h5"/></svg></span>
+          <span class="pop__body">
+            <strong>Hospital Equipment</strong>
+            <em>3,260 businesses</em>
+          </span>
+          <span class="pop__trend"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 17l6-6 4 4 6-6"/><path d="M15 9h5v5"/></svg> 16%</span>
+        </a>
+        <a class="pop" href="pages/find-services.html?q=Digital+Marketing" data-cat="Marketing">
+          <span class="pop__ico t-dm" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 14v3.5A1.5 1.5 0 0 0 5.5 19h13a1.5 1.5 0 0 0 1.5-1.5V14"/><path d="M12 15V4"/><path d="M8 8.5 12 4l4 4.5"/></svg></span>
+          <span class="pop__body">
+            <strong>Digital Marketing</strong>
+            <em>12,900 businesses</em>
+          </span>
+          <span class="pop__trend"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 17l6-6 4 4 6-6"/><path d="M15 9h5v5"/></svg> 41%</span>
+        </a>
+        <a class="pop" href="pages/find-products.html?q=Construction" data-cat="Construction">
+          <span class="pop__ico t-con" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 20h16"/><path d="M6 20v-7l5-3.5L16 13v7"/><path d="M9 20v-4h2v4"/></svg></span>
+          <span class="pop__body">
+            <strong>Construction</strong>
+            <em>18,500 businesses</em>
+          </span>
+          <span class="pop__trend"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 17l6-6 4 4 6-6"/><path d="M15 9h5v5"/></svg> 22%</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="categories">
+    <div class="container">
+      <header class="section__head reveal">
+        <span class="kicker">Browse the marketplace</span>
+        <h2 class="section__title">Explore Businesses by Industry</h2>
+        <p class="section__sub">Filter by industry, location and verification status to shortlist the right partners in minutes.</p>
+      </header>
+
+      <div class="catbar reveal">
+        <div class="chips" id="catFilter" role="group" aria-label="Filter industries">
+          <button class="chip is-active" data-filter="all">All Industries</button>
+          <button class="chip" data-filter="Manufacturing">Manufacturing</button>
+          <button class="chip" data-filter="Machinery">Machinery</button>
+          <button class="chip" data-filter="Electronics">Electronics</button>
+          <button class="chip" data-filter="Construction">Construction</button>
+          <button class="chip" data-filter="Automotive">Automotive</button>
+          <button class="chip" data-filter="Textile">Textile</button>
+          <button class="chip" data-filter="Food">Food &amp; Beverage</button>
+        </div>
+        <a class="catbar__all" href="pages/find-businesses.html">
+          View all 120+ industries
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
+
+      <div class="cats" id="catGrid">
+        <a class="cat reveal" href="pages/find-businesses.html?c=manufacturing" data-cat="Manufacturing">
+          <span class="cat__ico t-manu" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 21h18"/><path d="M4 21V11l4-3v13"/><path d="M13 21v-8h7v8"/><path d="M16 16h.01M16 18.5h.01M7 14h.01"/></svg></span>
+          <h3>Manufacturing</h3>
+          <p>42,600+ factories, exporters and production units.</p>
+          <span class="cat__meta">120 sub-categories <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </a>
+        <a class="cat reveal" data-delay="1" href="pages/find-businesses.html?c=machinery" data-cat="Machinery">
+          <span class="cat__ico t-machinery" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="7" cy="12" r="2.6"/><circle cx="17" cy="12" r="2.6"/><path d="M9.6 12h4.8M17 9.4V5.5h-3"/><path d="M7 9.4V5.5h3"/><path d="M3 18.5h18"/></svg></span>
+          <h3>Machinery &amp; Equipment</h3>
+          <p>Industrial machinery, CNC, tooling and plant setup.</p>
+          <span class="cat__meta">96 sub-categories <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </a>
+        <a class="cat reveal" data-delay="2" href="pages/find-businesses.html?c=electronics" data-cat="Electronics">
+          <span class="cat__ico t-elec" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="7" y="7" width="10" height="10" rx="1.5"/><path d="M10 3.5v3M14 3.5v3M10 17.5v3M14 17.5v3M3.5 10h3M3.5 14h3M17.5 10h3M17.5 14h3"/></svg></span>
+          <h3>Electronics &amp; Electrical</h3>
+          <p>Components, PCB assembly, panels, wiring and power.</p>
+          <span class="cat__meta">84 sub-categories <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </a>
+        <a class="cat reveal" data-delay="3" href="pages/find-businesses.html?c=construction" data-cat="Construction">
+          <span class="cat__ico t-con" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 20h16"/><path d="M6 20v-7l5-3.5L16 13v7"/><path d="M9 20v-4h2v4"/></svg></span>
+          <h3>Construction &amp; Building</h3>
+          <p>Cement, steel, fittings, interiors and contractors.</p>
+          <span class="cat__meta">110 sub-categories <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </a>
+        <a class="cat reveal" data-delay="4" href="pages/find-businesses.html?c=automotive" data-cat="Automotive">
+          <span class="cat__ico t-auto" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 16v-3.4l1.8-4.2A2 2 0 0 1 7.6 7h8.8a2 2 0 0 1 1.8 1.4L20 12.6V16"/><path d="M4 12h16"/><circle cx="7.5" cy="16" r="1.6"/><circle cx="16.5" cy="16" r="1.6"/></svg></span>
+          <h3>Automotive</h3>
+          <p>Components, spare parts, EV tech and garages.</p>
+          <span class="cat__meta">72 sub-categories <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </a>
+        <a class="cat reveal" data-delay="5" href="pages/find-businesses.html?c=textile" data-cat="Textile">
+          <span class="cat__ico t-tex" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 6h16l-1.6 4.4a3 3 0 0 1-2.9 2H7.5a3 3 0 0 1-2.9-2L4 6z"/><path d="M8 12.4V20h8v-7.6"/></svg></span>
+          <h3>Textile &amp; Garments</h3>
+          <p>Fabric mills, dyeing, apparel and packaging.</p>
+          <span class="cat__meta">98 sub-categories <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </a>
+        <a class="cat reveal" data-delay="6" href="pages/find-businesses.html?c=food" data-cat="Food">
+          <span class="cat__ico t-food" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 4v7a2.5 2.5 0 0 0 5 0V4"/><path d="M8.5 11.5V20"/><path d="M17 4c-1.4 1.6-2 3.4-2 5.2 0 1.5.7 2.4 2 2.6V20"/></svg></span>
+          <h3>Food &amp; Beverage</h3>
+          <p>Food processing, spices, beverages and catering.</p>
+          <span class="cat__meta">64 sub-categories <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </a>
+        <a class="cat reveal" data-delay="7" href="pages/find-businesses.html?c=healthcare" data-cat="Healthcare">
+          <span class="cat__ico t-hosp" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 8h16v11a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V8z"/><path d="M9 8V5.5A1.5 1.5 0 0 1 10.5 4h3A1.5 1.5 0 0 1 15 5.5V8"/><path d="M12 11.5v5M9.5 14h5"/></svg></span>
+          <h3>Healthcare &amp; Medical</h3>
+          <p>Hospital equipment, diagnostics and pharma supply.</p>
+          <span class="cat__meta">58 sub-categories <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </a>
+      </div>
+
+      <p class="catempty" id="catEmpty" hidden>No industries match this filter. <button type="button" class="linkbtn" data-reset>Show all industries</button></p>
+    </div>
+  </section>
+
+  <section class="section section--soft" id="featured">
+    <div class="container">
+      <header class="section__head section__head--row reveal">
+        <div>
+          <span class="kicker">Handpicked this week</span>
+          <h2 class="section__title">Featured Verified Businesses</h2>
+          <p class="section__sub">Vetted by our marketplace team for compliance, capacity and response history.</p>
+        </div>
+        <a class="btn btn--ghost" href="pages/find-businesses.html">
+          See all businesses
+          <svg viewBox="0 0 24 24" class="btn__i" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </header>
+
+      <div class="biz" id="bizGrid">
+        <article class="bizcard reveal">
+          <div class="bizcard__top">
+            <span class="bizcard__logo t-machinery">SC</span>
+            <span class="chip chip--green">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l7.5 3v5.4c0 4.6-3.1 8.4-7.5 9.6-4.4-1.2-7.5-5-7.5-9.6V6L12 3z"/><path d="m9 12 2.2 2.2L15.4 10"/></svg>
+              Verified
+            </span>
+          </div>
+          <h3>Shreeji CNC Works</h3>
+          <p class="bizcard__cat">Machinery &amp; Equipment &middot; CNC Job Work</p>
+          <ul class="bizcard__specs">
+            <li><span>MOQ</span><strong>10 Pieces</strong></li>
+            <li><span>Experience</span><strong>18 Years</strong></li>
+          </ul>
+          <div class="bizcard__foot">
+            <span class="loc"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><circle cx="12" cy="10" r="2.6"/></svg>Ahmedabad, GJ</span>
+            <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733; <b>4.9</b> <em>(214)</em></span>
+          </div>
+          <div class="bizcard__actions">
+            <a class="btn btn--primary btn--sm" href="pages/business.html">View Profile</a>
+            <a class="btn btn--outline btn--sm" href="pages/contact.html">Enquire Now</a>
+          </div>
+        </article>
+
+        <article class="bizcard reveal" data-delay="1">
+          <div class="bizcard__top">
+            <span class="bizcard__logo t-solar">SR</span>
+            <span class="chip chip--green">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l7.5 3v5.4c0 4.6-3.1 8.4-7.5 9.6-4.4-1.2-7.5-5-7.5-9.6V6L12 3z"/><path d="m9 12 2.2 2.2L15.4 10"/></svg>
+              Verified
+            </span>
+          </div>
+          <h3>SunRISE Solar Systems</h3>
+          <p class="bizcard__cat">Renewable Energy &middot; Solar Modules</p>
+          <ul class="bizcard__specs">
+            <li><span>MOQ</span><strong>50 Panels</strong></li>
+            <li><span>Experience</span><strong>12 Years</strong></li>
+          </ul>
+          <div class="bizcard__foot">
+            <span class="loc"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><circle cx="12" cy="10" r="2.6"/></svg>Jodhpur, RJ</span>
+            <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733; <b>4.8</b> <em>(167)</em></span>
+          </div>
+          <div class="bizcard__actions">
+            <a class="btn btn--primary btn--sm" href="pages/business.html">View Profile</a>
+            <a class="btn btn--outline btn--sm" href="pages/contact.html">Enquire Now</a>
+          </div>
+        </article>
+
+        <article class="bizcard reveal" data-delay="2">
+          <div class="bizcard__top">
+            <span class="bizcard__logo t-pack">NP</span>
+            <span class="chip chip--green">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l7.5 3v5.4c0 4.6-3.1 8.4-7.5 9.6-4.4-1.2-7.5-5-7.5-9.6V6L12 3z"/><path d="m9 12 2.2 2.2L15.4 10"/></svg>
+              Verified
+            </span>
+          </div>
+          <h3>Narmada Packaging Co.</h3>
+          <p class="bizcard__cat">Manufacturing &middot; Corrugated Boxes</p>
+          <ul class="bizcard__specs">
+            <li><span>MOQ</span><strong>1,000 Boxes</strong></li>
+            <li><span>Experience</span><strong>15 Years</strong></li>
+          </ul>
+          <div class="bizcard__foot">
+            <span class="loc"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><circle cx="12" cy="10" r="2.6"/></svg>Indore, MP</span>
+            <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733; <b>4.7</b> <em>(302)</em></span>
+          </div>
+          <div class="bizcard__actions">
+            <a class="btn btn--primary btn--sm" href="pages/business.html">View Profile</a>
+            <a class="btn btn--outline btn--sm" href="pages/contact.html">Enquire Now</a>
+          </div>
+        </article>
+
+        <article class="bizcard reveal" data-delay="3">
+          <div class="bizcard__top">
+            <span class="bizcard__logo t-tex">KT</span>
+            <span class="chip chip--green">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l7.5 3v5.4c0 4.6-3.1 8.4-7.5 9.6-4.4-1.2-7.5-5-7.5-9.6V6L12 3z"/><path d="m9 12 2.2 2.2L15.4 10"/></svg>
+              Verified
+            </span>
+          </div>
+          <h3>Kaveri Textile Mills</h3>
+          <p class="bizcard__cat">Textile &amp; Garments &middot; Cotton Fabric</p>
+          <ul class="bizcard__specs">
+            <li><span>MOQ</span><strong>500 Meters</strong></li>
+            <li><span>Experience</span><strong>22 Years</strong></li>
+          </ul>
+          <div class="bizcard__foot">
+            <span class="loc"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><circle cx="12" cy="10" r="2.6"/></svg>Coimbatore, TN</span>
+            <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733; <b>4.9</b> <em>(428)</em></span>
+          </div>
+          <div class="bizcard__actions">
+            <a class="btn btn--primary btn--sm" href="pages/business.html">View Profile</a>
+            <a class="btn btn--outline btn--sm" href="pages/contact.html">Enquire Now</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="how">
+    <div class="container">
+      <header class="section__head reveal">
+        <span class="kicker">Simple by design</span>
+        <h2 class="section__title">How BizBook Works</h2>
+        <p class="section__sub">From first search to signed purchase order — everything happens on one platform.</p>
+      </header>
+
+      <div class="steps">
+        <article class="step reveal">
+          <span class="step__num">01</span>
+          <span class="step__ico" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.6-3.6"/></svg></span>
+          <h3>Search &amp; Discover</h3>
+          <p>Filter 10M+ products and 500K+ businesses by industry, city, MOQ, price and certifications.</p>
+        </article>
+        <article class="step reveal" data-delay="1">
+          <span class="step__num">02</span>
+          <span class="step__ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 6h16v9H8l-4 3.5V6z"/><path d="M8 10h8"/></svg></span>
+          <h3>Compare &amp; Shortlist</h3>
+          <p>Compare quotations, GST details, certifications, lead time and past buyer reviews side by side.</p>
+        </article>
+        <article class="step reveal" data-delay="2">
+          <span class="step__num">03</span>
+          <span class="step__ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 6h16v12H4z"/><path d="M4 10h16"/><path d="M8 14h4"/></svg></span>
+          <h3>Enquire &amp; Negotiate</h3>
+          <p>Send RFQs in one click and chat directly with verified sales managers — no middlemen.</p>
+        </article>
+        <article class="step reveal" data-delay="3">
+          <span class="step__num">04</span>
+          <span class="step__ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 8l4.5 3.5L12 5l4.5 6.5L21 8"/><path d="M4 19h16"/></svg></span>
+          <h3>Order &amp; Track</h3>
+          <p>Place orders, escrow payments, and follow logistics milestones until delivery at your gate.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--soft" id="audience">
+    <div class="container">
+      <div class="split">
+        <div class="split__copy reveal">
+          <span class="kicker">Built for both sides</span>
+          <h2 class="section__title">One platform for buyers and businesses</h2>
+          <p class="section__sub">Whether you are sourcing components or filling order books, BizBook gives you the tools, reach and trust infrastructure to move faster.</p>
+
+          <ul class="ticks">
+            <li>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7"/></svg>
+              <div><strong>AI-assisted matching</strong><span>RFQs routed to the most relevant suppliers in seconds.</span></div>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7"/></svg>
+              <div><strong>Verified supply chain</strong><span>GST, ISO and MSME checks on every listed business.</span></div>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7"/></svg>
+              <div><strong>Escrow &amp; buyer protection</strong><span>Funds released only when your consignment is accepted.</span></div>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7"/></svg>
+              <div><strong>Lead management CRM</strong><span>Every enquiry, quote and follow-up in one dashboard.</span></div>
+            </li>
+          </ul>
+
+          <div class="split__cta">
+            <a class="btn btn--primary" href="pages/for-buyers.html">I am a Buyer</a>
+            <a class="btn btn--outline" href="pages/for-businesses.html">I am a Business</a>
+          </div>
+        </div>
+
+        <div class="split__panel reveal" data-delay="1">
+          <div class="dash">
+            <div class="dash__head">
+              <span class="dotgrid"></span>
+              <div>
+                <strong>Seller Dashboard</strong>
+                <span>Last 30 days &middot; All India</span>
+              </div>
+              <span class="chip chip--green">Live</span>
+            </div>
+            <div class="dash__stats">
+              <div><span>Impressions</span><strong>184,320</strong><em class="up">+18.4%</em></div>
+              <div><span>Leads</span><strong>1,946</strong><em class="up">+12.1%</em></div>
+              <div><span>Conversion</span><strong>4.8%</strong><em class="up">+0.6%</em></div>
+              <div><span>Revenue</span><strong>&#8377;42.6L</strong><em class="down">-2.3%</em></div>
+            </div>
+            <svg class="dash__chart" viewBox="0 0 320 120" preserveAspectRatio="none" aria-hidden="true">
+              <defs>
+                <linearGradient id="dashfill" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0" stop-color="#f26522" stop-opacity=".35"/>
+                  <stop offset="1" stop-color="#f26522" stop-opacity="0"/>
+                </linearGradient>
+              </defs>
+              <g class="dash__gridlines"><path d="M0 30h320M0 60h320M0 90h320"/></g>
+              <path class="dash__area" d="M0 100 L40 88 L80 94 L120 66 L160 74 L200 48 L240 56 L280 30 L320 22 L320 120 L0 120 Z" fill="url(#dashfill)"/>
+              <path class="dash__line" d="M0 100 L40 88 L80 94 L120 66 L160 74 L200 48 L240 56 L280 30 L320 22"/>
+            </svg>
+            <ul class="dash__list">
+              <li><span class="dash__flag">IN</span><div><strong>Precision CNC Components</strong><em>3 new enquiries &middot; Bengaluru</em></div><span class="chip chip--amber">New</span></li>
+              <li><span class="dash__flag">AE</span><div><strong>Industrial Solar Installers</strong><em>Quotation sent &middot; Dubai</em></div><span class="chip chip--blue">Quoted</span></li>
+              <li><span class="dash__flag">US</span><div><strong>Cotton Fabric Bulk Order</strong><em>Under negotiation &middot; New York</em></div><span class="chip chip--green">Won</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="testimonials">
+    <div class="container">
+      <header class="section__head reveal">
+        <span class="kicker">Customer stories</span>
+        <h2 class="section__title">Trusted by businesses that cannot afford delays</h2>
+        <p class="section__sub">From procurement managers to MSME founders — here is what they say.</p>
+      </header>
+
+      <div class="quotes" id="quotes">
+        <article class="quote is-active reveal">
+          <div class="quote__mark" aria-hidden="true">&ldquo;</div>
+          <p>We sourced 40 tonnes of cold-rolled steel through BizBook in nine days. The supplier was verified, the price was transparent and delivery hit our Coimbatore plant a day early.</p>
+          <footer>
+            <span class="avatar av-1">RK</span>
+            <div><strong>Rohit Kulkarni</strong><em>Head of Procurement &middot; Meridian Infra</em></div>
+            <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+          </footer>
+        </article>
+        <article class="quote reveal">
+          <div class="quote__mark" aria-hidden="true">&ldquo;</div>
+          <p>As a 22-year-old textile mill, we needed a steady export pipeline. BizBook gave us 14 verified buyers in the first quarter and our enquiry-to-order rate has never been higher.</p>
+          <footer>
+            <span class="avatar av-2">SM</span>
+            <div><strong>Sneha Menon</strong><em>Director &middot; Kaveri Textile Mills</em></div>
+            <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+          </footer>
+        </article>
+        <article class="quote reveal">
+          <div class="quote__mark" aria-hidden="true">&ldquo;</div>
+          <p>Finding a reliable digital marketing agency used to take weeks of local referrals. We shortlisted four agencies on BizBook in an afternoon and signed with one the same week.</p>
+          <footer>
+            <span class="avatar av-3">AI</span>
+            <div><strong>Arjun Iyer</strong><em>Founder &middot; FitCircle Health</em></div>
+            <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+          </footer>
+        </article>
+      </div>
+
+      <div class="quotes__dots" id="quoteDots" role="tablist" aria-label="Testimonials">
+        <button class="is-active" role="tab" aria-selected="true" aria-label="Testimonial 1"></button>
+        <button role="tab" aria-selected="false" aria-label="Testimonial 2"></button>
+        <button role="tab" aria-selected="false" aria-label="Testimonial 3"></button>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <div class="container cta__inner">
+      <div class="cta__copy reveal">
+        <h2>Ready to grow your business with BizBook?</h2>
+        <p>Join 500,000+ listed businesses reaching 2 million buyers every month — free to list, free to respond.</p>
+        <ul class="cta__list">
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7"/></svg> Unlimited product listings</li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7"/></svg> Unlimited buyer enquiries</li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7"/></svg> Free verification &amp; trust badge</li>
+        </ul>
+      </div>
+      <div class="cta__actions reveal" data-delay="1">
+        <a class="btn btn--light btn--lg" href="pages/list-your-business.html">List Your Business — It's Free</a>
+        <a class="btn btn--outline-light btn--lg" href="pages/pricing.html">View Pricing Plans</a>
+        <a class="cta__phone" href="pages/help.html">Need help? Talk to a sales specialist &rarr;</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <a class="brand brand--footer" href="index.html">
+          <span class="brand__mark" aria-hidden="true">
+            <svg viewBox="0 0 32 32" width="32" height="32"><rect width="32" height="32" rx="9" fill="url(#bg2)"/><path d="M10.5 8.5h10.2a2.3 2.3 0 0 1 2.3 2.3v12.7h-10a2.5 2.5 0 0 1-2.5-2.5V8.5z" fill="#fff"/><path d="M13.2 12.6h6.6M13.2 16h6.6M13.2 19.4h4" stroke="#f26522" stroke-width="1.7" stroke-linecap="round"/><defs><linearGradient id="bg2" x1="0" y1="0" x2="32" y2="32"><stop stop-color="#ff8a3d"/><stop offset="1" stop-color="#e14d0a"/></linearGradient></defs></svg>
+          </span>
+          <span class="brand__text">
+            <span class="brand__name">BizBook</span>
+            <span class="brand__tag">India's Business Marketplace</span>
+          </span>
+        </a>
+        <p>Connecting businesses, buyers, suppliers and service providers across India since 2016 — the trusted infrastructure behind modern trade.</p>
+        <div class="footer__social">
+          <a href="pages/help.html" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M6.5 9.5v8M6.5 6.2v.01M10.8 17.5v-4.4a2.6 2.6 0 0 1 5.2 0v4.4M10.8 10v7.5"/></svg></a>
+          <a href="pages/help.html" aria-label="Twitter"><svg viewBox="0 0 24 24"><path d="M4 6.5 12 14l8-7.5M4 18.5 9.5 13M20 18.5 14.5 13"/></svg></a>
+          <a href="pages/help.html" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M13.5 21v-7.5H16l.5-3h-3V8.6c0-.9.3-1.6 1.6-1.6H16.6V4.4c-.3 0-1.2-.1-2.2-.1-2.2 0-3.7 1.4-3.7 3.9v2.3H8.5v3h2.2V21"/></svg></a>
+          <a href="pages/help.html" aria-label="YouTube"><svg viewBox="0 0 24 24"><path d="M3.5 8.5h17v7h-17z"/><path d="M10.5 10 14 12l-3.5 2z"/></svg></a>
+        </div>
+      </div>
+
+      <div class="footer__col">
+        <h3>Marketplace</h3>
+        <ul>
+          <li><a href="pages/find-businesses.html">Find Businesses</a></li>
+          <li><a href="pages/find-products.html">Find Products</a></li>
+          <li><a href="pages/find-services.html">Find Services</a></li>
+          <li><a href="pages/find-businesses.html?type=local">Local Search</a></li>
+          <li><a href="pages/find-businesses.html?verified=1">Verified Only</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h3>Industries</h3>
+        <ul>
+          <li><a href="pages/find-businesses.html?c=manufacturing">Manufacturing</a></li>
+          <li><a href="pages/find-businesses.html?c=machinery">Machinery</a></li>
+          <li><a href="pages/find-businesses.html?c=electronics">Electronics</a></li>
+          <li><a href="pages/find-businesses.html?c=textile">Textile &amp; Garments</a></li>
+          <li><a href="pages/find-businesses.html?c=construction">Construction</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h3>For Businesses</h3>
+        <ul>
+          <li><a href="pages/list-your-business.html">List Your Business</a></li>
+          <li><a href="pages/for-businesses.html">Seller Solutions</a></li>
+          <li><a href="pages/pricing.html">Pricing</a></li>
+          <li><a href="pages/resources.html">Business Resources</a></li>
+          <li><a href="pages/resources.html">Seller Support</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h3>Company</h3>
+        <ul>
+          <li><a href="pages/about.html">About BizBook</a></li>
+          <li><a href="pages/help.html">Help Centre</a></li>
+          <li><a href="pages/resources.html">Careers</a></li>
+          <li><a href="pages/resources.html">Press</a></li>
+          <li><a href="pages/contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer__mid">
+      <div class="footer__mini">
+        <span class="footer__minilabel">Popular:</span>
+        <a href="pages/find-products.html?q=CNC+Machine">CNC Machine</a>
+        <a href="pages/find-products.html?q=Solar+Panel">Solar Panel</a>
+        <a href="pages/find-products.html?q=Packaging">Packaging</a>
+        <a href="pages/find-products.html?q=Textile">Textile</a>
+        <a href="pages/find-products.html?q=Hospital+Equipment">Hospital Equipment</a>
+        <a href="pages/find-services.html?q=Digital+Marketing">Digital Marketing</a>
+        <a href="pages/find-products.html?q=Construction">Construction</a>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <p>&copy; 2016–2026 BizBook Marketplace Pvt. Ltd. All rights reserved.</p>
+      <nav class="footer__legal" aria-label="Legal">
+        <a href="pages/terms.html">Terms of Use</a>
+        <a href="pages/privacy.html">Privacy Policy</a>
+        <a href="pages/terms.html">Cookie Preferences</a>
+        <a href="pages/help.html">Grievance Redressal</a>
+      </nav>
+      <div class="footer__pay">
+        <span>UPI</span><span>VISA</span><span>Mastercard</span><span>Net Banking</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<button class="totop" id="toTop" aria-label="Back to top">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6"/></svg>
+</button>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
