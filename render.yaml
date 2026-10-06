@@ -12,8 +12,10 @@ services:
     plan: free
     region: singapore
     # Builds web/dist, then the Express server serves both the API and that build.
-    buildCommand: npm run install:all && npm run build
-    startCommand: npm start
+    # NODE_ENV=production makes plain `npm install` skip devDependencies (vite,
+    # tailwind, etc.), so install:all must explicitly request them.
+    buildCommand: npm run install:all && cd web && npm run build
+    startCommand: cd server && npm start
     healthCheckPath: /api/health
     autoDeploy: true
     envVars:

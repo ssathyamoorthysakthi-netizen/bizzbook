@@ -4,7 +4,7 @@
   "private": true,
   "description": "BizBook — Indian B2B marketplace (React + Express + MongoDB)",
   "scripts": {
-    "install:all": "npm install --prefix server && npm install --prefix web",
+    "install:all": "npm install --prefix server && npm install --prefix web --include=dev",
     "build": "npm run build --prefix web",
     "start": "npm start --prefix server",
     "dev:web": "npm run dev --prefix web",
