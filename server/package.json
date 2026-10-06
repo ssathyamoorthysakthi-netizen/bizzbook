@@ -4,10 +4,13 @@
   "description": "BizBook marketplace API (Express + MongoDB + JWT)",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
-    "dev": "node --watch server.js",
-    "seed": "node seed-mongo.js",
-    "seed:force": "node seed-mongo.js --force"
+    "start": "node --env-file-if-exists=../.env server.js",
+    "dev": "node --watch --env-file-if-exists=../.env server.js",
+    "seed": "node --env-file-if-exists=../.env seed-mongo.js",
+    "seed:force": "node --env-file-if-exists=../.env seed-mongo.js --force"
+  },
+  "engines": {
+    "node": ">=20.6.0"
   },
   "keywords": [
     "b2b",
