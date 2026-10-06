@@ -138,10 +138,12 @@ router.get('/cities', async (_req, res, next) => {
       { $limit: 60 }
     ]).toArray();
     res.json({
-      items: items.map(i => ({
-        city: i._id.city, state: i._id.state, count: i.n,
-        label: `${i._id.city}, ${i._id.state}`
-      }))
+      items: items
+        .filter(i => i._id.city)
+        .map(i => ({
+          city: i._id.city, state: i._id.state || null, count: i.n,
+          label: i._id.state ? `${i._id.city}, ${i._id.state}` : i._id.city
+        }))
     });
   } catch (e) { next(e); }
 });
