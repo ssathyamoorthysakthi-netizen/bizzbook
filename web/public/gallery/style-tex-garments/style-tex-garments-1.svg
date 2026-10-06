@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 600" width="640" height="600" role="img" aria-label="Manufacturing unit at Style Tex Garments">
+  <defs>
+    <linearGradient id="sky-style-tex-garments-unit" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="hsl(307 30% 26%)"/>
+      <stop offset="100%" stop-color="hsl(307 26% 16%)"/>
+    </linearGradient>
+    <linearGradient id="vig-style-tex-garments-unit" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#000" stop-opacity="0"/>
+      <stop offset="72%" stop-color="#000" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#000" stop-opacity="0.45"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="640" height="600" fill="url(#sky-style-tex-garments-unit)"/>
+  <circle cx="512" cy="86" r="46" fill="hsl(307 52% 70%)" opacity="0.16"/>
+
+  <g opacity="0.34">
+    <rect x="0" y="206" width="640" height="94" fill="none" stroke="hsl(307 34% 56%)" stroke-width="2"/>
+    <rect x="30" y="216" width="34" height="30" fill="hsl(307 36% 58%)" opacity="0.18"/>
+    <rect x="134" y="216" width="34" height="30" fill="hsl(307 36% 58%)" opacity="0.22"/>
+    <rect x="238" y="216" width="34" height="30" fill="hsl(307 36% 58%)" opacity="0.26"/>
+    <rect x="342" y="216" width="34" height="30" fill="hsl(307 36% 58%)" opacity="0.30"/>
+    <rect x="446" y="216" width="34" height="30" fill="hsl(307 36% 58%)" opacity="0.34"/>
+    <rect x="550" y="216" width="34" height="30" fill="hsl(307 36% 58%)" opacity="0.38"/>
+  </g>
+
+  <g>
+    <rect x="0" y="300" width="640" height="300" fill="hsl(307 24% 22%)"/>
+    <rect x="0" y="296" width="640" height="6" fill="hsl(307 30% 40%)" opacity="0.7"/>
+    <rect x="70" y="150" width="240" height="150" fill="hsl(307 42% 48%)"/>
+    <polygon points="70,150 110,120 350,120 310,150" fill="hsl(307 42% 52%)"/>
+    <rect x="100" y="185" width="44" height="42" fill="hsl(307 40% 62%)" opacity="0.9"/>
+    <rect x="160" y="185" width="44" height="42" fill="hsl(307 40% 62%)" opacity="0.75"/>
+    <rect x="220" y="185" width="44" height="42" fill="hsl(307 40% 62%)" opacity="0.6"/>
+    <rect x="370" y="120" width="26" height="180" fill="hsl(307 38% 32%)"/>
+    <rect x="352" y="104" width="62" height="20" fill="hsl(307 38% 32%)"/>
+    <rect x="430" y="190" width="150" height="110" fill="hsl(307 34% 36%)"/>
+    <rect x="450" y="212" width="50" height="34" fill="hsl(307 40% 62%)" opacity="0.7"/>
+    <rect x="512" y="212" width="50" height="34" fill="hsl(307 40% 62%)" opacity="0.5"/>
+  </g>
+
+  <rect width="640" height="600" fill="url(#vig-style-tex-garments-unit)"/>
+  <rect x="0" y="524" width="640" height="76" fill="#0a0f1c" opacity="0.5"/>
+  <text x="26" y="558" font-family="Segoe UI, system-ui, sans-serif" font-size="24" font-weight="700" fill="#ffffff">Manufacturing unit</text>
+  <text x="26" y="582" font-family="Segoe UI, system-ui, sans-serif" font-size="17" font-weight="500" fill="#ffffff" opacity="0.72">Style Tex Garments</text>
+</svg>

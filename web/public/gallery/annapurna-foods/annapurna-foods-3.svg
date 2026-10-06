@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 600" width="640" height="600" role="img" aria-label="Production floor at Annapurna Foods">
+  <defs>
+    <linearGradient id="sky-annapurna-foods-floor" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="hsl(46 30% 26%)"/>
+      <stop offset="100%" stop-color="hsl(46 26% 16%)"/>
+    </linearGradient>
+    <linearGradient id="vig-annapurna-foods-floor" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#000" stop-opacity="0"/>
+      <stop offset="72%" stop-color="#000" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#000" stop-opacity="0.45"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="640" height="600" fill="url(#sky-annapurna-foods-floor)"/>
+  <circle cx="512" cy="86" r="46" fill="hsl(46 52% 70%)" opacity="0.16"/>
+
+  <g opacity="0.34">
+    <rect x="0" y="206" width="640" height="94" fill="none" stroke="hsl(46 34% 56%)" stroke-width="2"/>
+    <rect x="30" y="216" width="34" height="30" fill="hsl(46 36% 58%)" opacity="0.18"/>
+    <rect x="134" y="216" width="34" height="30" fill="hsl(46 36% 58%)" opacity="0.22"/>
+    <rect x="238" y="216" width="34" height="30" fill="hsl(46 36% 58%)" opacity="0.26"/>
+    <rect x="342" y="216" width="34" height="30" fill="hsl(46 36% 58%)" opacity="0.30"/>
+    <rect x="446" y="216" width="34" height="30" fill="hsl(46 36% 58%)" opacity="0.34"/>
+    <rect x="550" y="216" width="34" height="30" fill="hsl(46 36% 58%)" opacity="0.38"/>
+  </g>
+
+  <g>
+    <rect x="0" y="300" width="640" height="300" fill="hsl(46 24% 22%)"/>
+    <rect x="0" y="296" width="640" height="6" fill="hsl(46 30% 40%)" opacity="0.7"/>
+    <rect x="65.0" y="186.7" width="72" height="113.3" fill="hsl(46 38% 32%)"/>
+    <rect x="75.0" y="196.7" width="16" height="16" fill="hsl(46 40% 62%)" opacity="0.8"/>
+    <rect x="101.0" y="206.7" width="16" height="16" fill="hsl(46 40% 62%)" opacity="0.55"/>
+    <rect x="169.7" y="187.4" width="72" height="112.6" fill="hsl(46 42% 48%)"/>
+    <rect x="179.7" y="197.4" width="16" height="16" fill="hsl(46 40% 62%)" opacity="0.8"/>
+    <rect x="205.7" y="207.4" width="16" height="16" fill="hsl(46 40% 62%)" opacity="0.55"/>
+    <rect x="284.4" y="172.7" width="72" height="127.3" fill="hsl(46 38% 32%)"/>
+    <rect x="294.4" y="182.7" width="16" height="16" fill="hsl(46 40% 62%)" opacity="0.8"/>
+    <rect x="320.4" y="192.7" width="16" height="16" fill="hsl(46 40% 62%)" opacity="0.55"/>
+    <rect x="384.4" y="179.0" width="72" height="121.0" fill="hsl(46 42% 48%)"/>
+    <rect x="394.4" y="189.0" width="16" height="16" fill="hsl(46 40% 62%)" opacity="0.8"/>
+    <rect x="420.4" y="199.0" width="16" height="16" fill="hsl(46 40% 62%)" opacity="0.55"/>
+    <rect x="498.6" y="152.6" width="72" height="147.4" fill="hsl(46 38% 32%)"/>
+    <rect x="508.6" y="162.6" width="16" height="16" fill="hsl(46 40% 62%)" opacity="0.8"/>
+    <rect x="534.6" y="172.6" width="16" height="16" fill="hsl(46 40% 62%)" opacity="0.55"/>
+    <rect x="0" y="180" width="640" height="10" fill="hsl(46 30% 44%)" opacity="0.55"/>
+  </g>
+
+  <rect width="640" height="600" fill="url(#vig-annapurna-foods-floor)"/>
+  <rect x="0" y="524" width="640" height="76" fill="#0a0f1c" opacity="0.5"/>
+  <text x="26" y="558" font-family="Segoe UI, system-ui, sans-serif" font-size="24" font-weight="700" fill="#ffffff">Production floor</text>
+  <text x="26" y="582" font-family="Segoe UI, system-ui, sans-serif" font-size="17" font-weight="500" fill="#ffffff" opacity="0.72">Annapurna Foods</text>
+</svg>

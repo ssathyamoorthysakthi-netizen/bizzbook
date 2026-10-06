@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 600" width="640" height="600" role="img" aria-label="Production floor at Shreeji CNC Works">
+  <defs>
+    <linearGradient id="sky-shreeji-cnc-works-floor" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="hsl(223 30% 26%)"/>
+      <stop offset="100%" stop-color="hsl(223 26% 16%)"/>
+    </linearGradient>
+    <linearGradient id="vig-shreeji-cnc-works-floor" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#000" stop-opacity="0"/>
+      <stop offset="72%" stop-color="#000" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#000" stop-opacity="0.45"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="640" height="600" fill="url(#sky-shreeji-cnc-works-floor)"/>
+  <circle cx="512" cy="86" r="46" fill="hsl(223 52% 70%)" opacity="0.16"/>
+
+  <g opacity="0.34">
+    <rect x="0" y="206" width="640" height="94" fill="none" stroke="hsl(223 34% 56%)" stroke-width="2"/>
+    <rect x="30" y="216" width="34" height="30" fill="hsl(223 36% 58%)" opacity="0.18"/>
+    <rect x="134" y="216" width="34" height="30" fill="hsl(223 36% 58%)" opacity="0.22"/>
+    <rect x="238" y="216" width="34" height="30" fill="hsl(223 36% 58%)" opacity="0.26"/>
+    <rect x="342" y="216" width="34" height="30" fill="hsl(223 36% 58%)" opacity="0.30"/>
+    <rect x="446" y="216" width="34" height="30" fill="hsl(223 36% 58%)" opacity="0.34"/>
+    <rect x="550" y="216" width="34" height="30" fill="hsl(223 36% 58%)" opacity="0.38"/>
+  </g>
+
+  <g>
+    <rect x="0" y="300" width="640" height="300" fill="hsl(223 24% 22%)"/>
+    <rect x="0" y="296" width="640" height="6" fill="hsl(223 30% 40%)" opacity="0.7"/>
+    <rect x="65.5" y="207.1" width="72" height="92.9" fill="hsl(223 38% 32%)"/>
+    <rect x="75.5" y="217.1" width="16" height="16" fill="hsl(223 40% 62%)" opacity="0.8"/>
+    <rect x="101.5" y="227.1" width="16" height="16" fill="hsl(223 40% 62%)" opacity="0.55"/>
+    <rect x="177.9" y="183.2" width="72" height="116.8" fill="hsl(223 42% 48%)"/>
+    <rect x="187.9" y="193.2" width="16" height="16" fill="hsl(223 40% 62%)" opacity="0.8"/>
+    <rect x="213.9" y="203.2" width="16" height="16" fill="hsl(223 40% 62%)" opacity="0.55"/>
+    <rect x="283.6" y="179.3" width="72" height="120.7" fill="hsl(223 38% 32%)"/>
+    <rect x="293.6" y="189.3" width="16" height="16" fill="hsl(223 40% 62%)" opacity="0.8"/>
+    <rect x="319.6" y="199.3" width="16" height="16" fill="hsl(223 40% 62%)" opacity="0.55"/>
+    <rect x="390.3" y="147.1" width="72" height="152.9" fill="hsl(223 42% 48%)"/>
+    <rect x="400.3" y="157.1" width="16" height="16" fill="hsl(223 40% 62%)" opacity="0.8"/>
+    <rect x="426.3" y="167.1" width="16" height="16" fill="hsl(223 40% 62%)" opacity="0.55"/>
+    <rect x="496.5" y="186.9" width="72" height="113.1" fill="hsl(223 38% 32%)"/>
+    <rect x="506.5" y="196.9" width="16" height="16" fill="hsl(223 40% 62%)" opacity="0.8"/>
+    <rect x="532.5" y="206.9" width="16" height="16" fill="hsl(223 40% 62%)" opacity="0.55"/>
+    <rect x="0" y="180" width="640" height="10" fill="hsl(223 30% 44%)" opacity="0.55"/>
+  </g>
+
+  <rect width="640" height="600" fill="url(#vig-shreeji-cnc-works-floor)"/>
+  <rect x="0" y="524" width="640" height="76" fill="#0a0f1c" opacity="0.5"/>
+  <text x="26" y="558" font-family="Segoe UI, system-ui, sans-serif" font-size="24" font-weight="700" fill="#ffffff">Production floor</text>
+  <text x="26" y="582" font-family="Segoe UI, system-ui, sans-serif" font-size="17" font-weight="500" fill="#ffffff" opacity="0.72">Shreeji CNC Works</text>
+</svg>

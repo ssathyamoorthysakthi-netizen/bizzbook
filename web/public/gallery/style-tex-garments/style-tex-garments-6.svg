@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 600" width="640" height="600" role="img" aria-label="CNC machining cell at Style Tex Garments">
+  <defs>
+    <linearGradient id="sky-style-tex-garments-machining" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="hsl(322 30% 26%)"/>
+      <stop offset="100%" stop-color="hsl(322 26% 16%)"/>
+    </linearGradient>
+    <linearGradient id="vig-style-tex-garments-machining" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#000" stop-opacity="0"/>
+      <stop offset="72%" stop-color="#000" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#000" stop-opacity="0.45"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="640" height="600" fill="url(#sky-style-tex-garments-machining)"/>
+  <circle cx="512" cy="86" r="46" fill="hsl(322 52% 70%)" opacity="0.16"/>
+
+  <g opacity="0.34">
+    <rect x="0" y="206" width="640" height="94" fill="none" stroke="hsl(322 34% 56%)" stroke-width="2"/>
+    <rect x="30" y="216" width="34" height="30" fill="hsl(322 36% 58%)" opacity="0.18"/>
+    <rect x="134" y="216" width="34" height="30" fill="hsl(322 36% 58%)" opacity="0.22"/>
+    <rect x="238" y="216" width="34" height="30" fill="hsl(322 36% 58%)" opacity="0.26"/>
+    <rect x="342" y="216" width="34" height="30" fill="hsl(322 36% 58%)" opacity="0.30"/>
+    <rect x="446" y="216" width="34" height="30" fill="hsl(322 36% 58%)" opacity="0.34"/>
+    <rect x="550" y="216" width="34" height="30" fill="hsl(322 36% 58%)" opacity="0.38"/>
+  </g>
+
+  <g>
+    <rect x="0" y="300" width="640" height="300" fill="hsl(322 24% 22%)"/>
+    <rect x="0" y="296" width="640" height="6" fill="hsl(322 30% 40%)" opacity="0.7"/>
+    <rect x="90" y="150" width="300" height="150" rx="6" fill="hsl(322 42% 48%)"/>
+    <rect x="90" y="150" width="300" height="34" rx="6" fill="hsl(322 44% 54%)"/>
+    <circle cx="240" cy="240" r="54" fill="hsl(322 34% 30%)"/>
+    <circle cx="240" cy="240" r="34" fill="hsl(322 40% 44%)"/>
+    <circle cx="240" cy="240" r="14" fill="hsl(322 46% 64%)"/>
+    <circle cx="284.0" cy="240.0" r="6" fill="hsl(322 40% 52%)"/>
+    <circle cx="271.1" cy="271.1" r="6" fill="hsl(322 40% 52%)"/>
+    <circle cx="240.0" cy="284.0" r="6" fill="hsl(322 40% 52%)"/>
+    <circle cx="208.9" cy="271.1" r="6" fill="hsl(322 40% 52%)"/>
+    <circle cx="196.0" cy="240.0" r="6" fill="hsl(322 40% 52%)"/>
+    <circle cx="208.9" cy="208.9" r="6" fill="hsl(322 40% 52%)"/>
+    <circle cx="240.0" cy="196.0" r="6" fill="hsl(322 40% 52%)"/>
+    <circle cx="271.1" cy="208.9" r="6" fill="hsl(322 40% 52%)"/>
+    <rect x="430" y="190" width="130" height="110" fill="hsl(322 38% 32%)"/>
+    <rect x="450" y="210" width="90" height="12" fill="hsl(322 40% 62%)" opacity="0.7"/>
+    <rect x="450" y="234" width="66" height="12" fill="hsl(322 40% 62%)" opacity="0.5"/>
+    <rect x="450" y="258" width="78" height="12" fill="hsl(322 40% 62%)" opacity="0.35"/>
+  </g>
+
+  <rect width="640" height="600" fill="url(#vig-style-tex-garments-machining)"/>
+  <rect x="0" y="524" width="640" height="76" fill="#0a0f1c" opacity="0.5"/>
+  <text x="26" y="558" font-family="Segoe UI, system-ui, sans-serif" font-size="24" font-weight="700" fill="#ffffff">CNC machining cell</text>
+  <text x="26" y="582" font-family="Segoe UI, system-ui, sans-serif" font-size="17" font-weight="500" fill="#ffffff" opacity="0.72">Style Tex Garments</text>
+</svg>

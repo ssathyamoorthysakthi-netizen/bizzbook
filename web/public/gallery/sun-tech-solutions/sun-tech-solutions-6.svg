@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 600" width="640" height="600" role="img" aria-label="Loading bay &amp; dispatch at Sun Tech Solutions">
+  <defs>
+    <linearGradient id="sky-sun-tech-solutions-dispatch" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="hsl(207 30% 26%)"/>
+      <stop offset="100%" stop-color="hsl(207 26% 16%)"/>
+    </linearGradient>
+    <linearGradient id="vig-sun-tech-solutions-dispatch" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#000" stop-opacity="0"/>
+      <stop offset="72%" stop-color="#000" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#000" stop-opacity="0.45"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="640" height="600" fill="url(#sky-sun-tech-solutions-dispatch)"/>
+  <circle cx="512" cy="86" r="46" fill="hsl(207 52% 70%)" opacity="0.16"/>
+
+  <g opacity="0.34">
+    <rect x="0" y="206" width="640" height="94" fill="none" stroke="hsl(207 34% 56%)" stroke-width="2"/>
+    <rect x="30" y="216" width="34" height="30" fill="hsl(207 36% 58%)" opacity="0.18"/>
+    <rect x="134" y="216" width="34" height="30" fill="hsl(207 36% 58%)" opacity="0.22"/>
+    <rect x="238" y="216" width="34" height="30" fill="hsl(207 36% 58%)" opacity="0.26"/>
+    <rect x="342" y="216" width="34" height="30" fill="hsl(207 36% 58%)" opacity="0.30"/>
+    <rect x="446" y="216" width="34" height="30" fill="hsl(207 36% 58%)" opacity="0.34"/>
+    <rect x="550" y="216" width="34" height="30" fill="hsl(207 36% 58%)" opacity="0.38"/>
+  </g>
+
+  <g>
+    <rect x="0" y="300" width="640" height="300" fill="hsl(207 24% 22%)"/>
+    <rect x="0" y="296" width="640" height="6" fill="hsl(207 30% 40%)" opacity="0.7"/>
+    <rect x="90" y="140" width="230" height="160" fill="hsl(207 38% 46%)"/>
+    <rect x="90" y="140" width="230" height="18" fill="hsl(207 42% 56%)"/>
+    <rect x="112" y="182" width="80" height="52" fill="hsl(207 40% 62%)" opacity="0.75"/>
+    <rect x="208" y="182" width="80" height="52" fill="hsl(207 40% 62%)" opacity="0.55"/>
+    <rect x="112" y="250" width="80" height="34" fill="hsl(207 40% 62%)" opacity="0.6"/>
+    <rect x="370" y="196" width="180" height="104" rx="8" fill="hsl(207 32% 34%)"/>
+    <polygon points="370,196 550,196 550,224 370,224" fill="hsl(207 36% 44%)"/>
+    <circle cx="404" cy="312" r="24" fill="hsl(207 30% 18%)"/>
+    <circle cx="516" cy="312" r="24" fill="hsl(207 30% 18%)"/>
+    <circle cx="404" cy="312" r="9" fill="hsl(207 40% 56%)"/>
+    <circle cx="516" cy="312" r="9" fill="hsl(207 40% 56%)"/>
+  </g>
+
+  <rect width="640" height="600" fill="url(#vig-sun-tech-solutions-dispatch)"/>
+  <rect x="0" y="524" width="640" height="76" fill="#0a0f1c" opacity="0.5"/>
+  <text x="26" y="558" font-family="Segoe UI, system-ui, sans-serif" font-size="24" font-weight="700" fill="#ffffff">Loading bay &amp; dispatch</text>
+  <text x="26" y="582" font-family="Segoe UI, system-ui, sans-serif" font-size="17" font-weight="500" fill="#ffffff" opacity="0.72">Sun Tech Solutions</text>
+</svg>

@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 600" width="640" height="600" role="img" aria-label="Production floor at Apollo Medisys">
+  <defs>
+    <linearGradient id="sky-apollo-medisys-floor" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="hsl(198 30% 26%)"/>
+      <stop offset="100%" stop-color="hsl(198 26% 16%)"/>
+    </linearGradient>
+    <linearGradient id="vig-apollo-medisys-floor" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#000" stop-opacity="0"/>
+      <stop offset="72%" stop-color="#000" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#000" stop-opacity="0.45"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="640" height="600" fill="url(#sky-apollo-medisys-floor)"/>
+  <circle cx="512" cy="86" r="46" fill="hsl(198 52% 70%)" opacity="0.16"/>
+
+  <g opacity="0.34">
+    <rect x="0" y="206" width="640" height="94" fill="none" stroke="hsl(198 34% 56%)" stroke-width="2"/>
+    <rect x="30" y="216" width="34" height="30" fill="hsl(198 36% 58%)" opacity="0.18"/>
+    <rect x="134" y="216" width="34" height="30" fill="hsl(198 36% 58%)" opacity="0.22"/>
+    <rect x="238" y="216" width="34" height="30" fill="hsl(198 36% 58%)" opacity="0.26"/>
+    <rect x="342" y="216" width="34" height="30" fill="hsl(198 36% 58%)" opacity="0.30"/>
+    <rect x="446" y="216" width="34" height="30" fill="hsl(198 36% 58%)" opacity="0.34"/>
+    <rect x="550" y="216" width="34" height="30" fill="hsl(198 36% 58%)" opacity="0.38"/>
+  </g>
+
+  <g>
+    <rect x="0" y="300" width="640" height="300" fill="hsl(198 24% 22%)"/>
+    <rect x="0" y="296" width="640" height="6" fill="hsl(198 30% 40%)" opacity="0.7"/>
+    <rect x="68.8" y="152.4" width="72" height="147.6" fill="hsl(198 38% 32%)"/>
+    <rect x="78.8" y="162.4" width="16" height="16" fill="hsl(198 40% 62%)" opacity="0.8"/>
+    <rect x="104.8" y="172.4" width="16" height="16" fill="hsl(198 40% 62%)" opacity="0.55"/>
+    <rect x="176.3" y="167.2" width="72" height="132.8" fill="hsl(198 42% 48%)"/>
+    <rect x="186.3" y="177.2" width="16" height="16" fill="hsl(198 40% 62%)" opacity="0.8"/>
+    <rect x="212.3" y="187.2" width="16" height="16" fill="hsl(198 40% 62%)" opacity="0.55"/>
+    <rect x="276.8" y="185.0" width="72" height="115.0" fill="hsl(198 38% 32%)"/>
+    <rect x="286.8" y="195.0" width="16" height="16" fill="hsl(198 40% 62%)" opacity="0.8"/>
+    <rect x="312.8" y="205.0" width="16" height="16" fill="hsl(198 40% 62%)" opacity="0.55"/>
+    <rect x="385.6" y="157.2" width="72" height="142.8" fill="hsl(198 42% 48%)"/>
+    <rect x="395.6" y="167.2" width="16" height="16" fill="hsl(198 40% 62%)" opacity="0.8"/>
+    <rect x="421.6" y="177.2" width="16" height="16" fill="hsl(198 40% 62%)" opacity="0.55"/>
+    <rect x="492.8" y="180.7" width="72" height="119.3" fill="hsl(198 38% 32%)"/>
+    <rect x="502.8" y="190.7" width="16" height="16" fill="hsl(198 40% 62%)" opacity="0.8"/>
+    <rect x="528.8" y="200.7" width="16" height="16" fill="hsl(198 40% 62%)" opacity="0.55"/>
+    <rect x="0" y="180" width="640" height="10" fill="hsl(198 30% 44%)" opacity="0.55"/>
+  </g>
+
+  <rect width="640" height="600" fill="url(#vig-apollo-medisys-floor)"/>
+  <rect x="0" y="524" width="640" height="76" fill="#0a0f1c" opacity="0.5"/>
+  <text x="26" y="558" font-family="Segoe UI, system-ui, sans-serif" font-size="24" font-weight="700" fill="#ffffff">Production floor</text>
+  <text x="26" y="582" font-family="Segoe UI, system-ui, sans-serif" font-size="17" font-weight="500" fill="#ffffff" opacity="0.72">Apollo Medisys</text>
+</svg>

@@ -45,6 +45,8 @@ function shapeBusiness(b) {
     rating: b.rating, reviewCount: b.reviewCount,
     respondsIn: b.responseMins ? `~${b.responseMins} min` : null,
     phone: b.phone, email: b.email, website: b.website, views: b.views,
+    gallery: Array.isArray(b.gallery) ? b.gallery : [],
+    coverImage: b.gallery && b.gallery[0] ? b.gallery[0] : null,
     businessType: b.businessType || null,
     ownerId: b.ownerId ? String(b.ownerId) : null,
     createdAt: b.createdAt

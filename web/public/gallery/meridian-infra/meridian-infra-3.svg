@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 600" width="640" height="600" role="img" aria-label="Production floor at Meridian Infra">
+  <defs>
+    <linearGradient id="sky-meridian-infra-floor" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="hsl(24 30% 26%)"/>
+      <stop offset="100%" stop-color="hsl(24 26% 16%)"/>
+    </linearGradient>
+    <linearGradient id="vig-meridian-infra-floor" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#000" stop-opacity="0"/>
+      <stop offset="72%" stop-color="#000" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#000" stop-opacity="0.45"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="640" height="600" fill="url(#sky-meridian-infra-floor)"/>
+  <circle cx="512" cy="86" r="46" fill="hsl(24 52% 70%)" opacity="0.16"/>
+
+  <g opacity="0.34">
+    <rect x="0" y="206" width="640" height="94" fill="none" stroke="hsl(24 34% 56%)" stroke-width="2"/>
+    <rect x="30" y="216" width="34" height="30" fill="hsl(24 36% 58%)" opacity="0.18"/>
+    <rect x="134" y="216" width="34" height="30" fill="hsl(24 36% 58%)" opacity="0.22"/>
+    <rect x="238" y="216" width="34" height="30" fill="hsl(24 36% 58%)" opacity="0.26"/>
+    <rect x="342" y="216" width="34" height="30" fill="hsl(24 36% 58%)" opacity="0.30"/>
+    <rect x="446" y="216" width="34" height="30" fill="hsl(24 36% 58%)" opacity="0.34"/>
+    <rect x="550" y="216" width="34" height="30" fill="hsl(24 36% 58%)" opacity="0.38"/>
+  </g>
+
+  <g>
+    <rect x="0" y="300" width="640" height="300" fill="hsl(24 24% 22%)"/>
+    <rect x="0" y="296" width="640" height="6" fill="hsl(24 30% 40%)" opacity="0.7"/>
+    <rect x="67.3" y="146.8" width="72" height="153.2" fill="hsl(24 38% 32%)"/>
+    <rect x="77.3" y="156.8" width="16" height="16" fill="hsl(24 40% 62%)" opacity="0.8"/>
+    <rect x="103.3" y="166.8" width="16" height="16" fill="hsl(24 40% 62%)" opacity="0.55"/>
+    <rect x="170.3" y="185.3" width="72" height="114.7" fill="hsl(24 42% 48%)"/>
+    <rect x="180.3" y="195.3" width="16" height="16" fill="hsl(24 40% 62%)" opacity="0.8"/>
+    <rect x="206.3" y="205.3" width="16" height="16" fill="hsl(24 40% 62%)" opacity="0.55"/>
+    <rect x="276.5" y="197.9" width="72" height="102.1" fill="hsl(24 38% 32%)"/>
+    <rect x="286.5" y="207.9" width="16" height="16" fill="hsl(24 40% 62%)" opacity="0.8"/>
+    <rect x="312.5" y="217.9" width="16" height="16" fill="hsl(24 40% 62%)" opacity="0.55"/>
+    <rect x="392.1" y="163.0" width="72" height="137.0" fill="hsl(24 42% 48%)"/>
+    <rect x="402.1" y="173.0" width="16" height="16" fill="hsl(24 40% 62%)" opacity="0.8"/>
+    <rect x="428.1" y="183.0" width="16" height="16" fill="hsl(24 40% 62%)" opacity="0.55"/>
+    <rect x="494.0" y="189.2" width="72" height="110.8" fill="hsl(24 38% 32%)"/>
+    <rect x="504.0" y="199.2" width="16" height="16" fill="hsl(24 40% 62%)" opacity="0.8"/>
+    <rect x="530.0" y="209.2" width="16" height="16" fill="hsl(24 40% 62%)" opacity="0.55"/>
+    <rect x="0" y="180" width="640" height="10" fill="hsl(24 30% 44%)" opacity="0.55"/>
+  </g>
+
+  <rect width="640" height="600" fill="url(#vig-meridian-infra-floor)"/>
+  <rect x="0" y="524" width="640" height="76" fill="#0a0f1c" opacity="0.5"/>
+  <text x="26" y="558" font-family="Segoe UI, system-ui, sans-serif" font-size="24" font-weight="700" fill="#ffffff">Production floor</text>
+  <text x="26" y="582" font-family="Segoe UI, system-ui, sans-serif" font-size="17" font-weight="500" fill="#ffffff" opacity="0.72">Meridian Infra</text>
+</svg>

@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 600" width="640" height="600" role="img" aria-label="Production floor at Looms of Gujarat">
+  <defs>
+    <linearGradient id="sky-looms-of-gujarat-floor" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="hsl(324 30% 26%)"/>
+      <stop offset="100%" stop-color="hsl(324 26% 16%)"/>
+    </linearGradient>
+    <linearGradient id="vig-looms-of-gujarat-floor" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#000" stop-opacity="0"/>
+      <stop offset="72%" stop-color="#000" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#000" stop-opacity="0.45"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="640" height="600" fill="url(#sky-looms-of-gujarat-floor)"/>
+  <circle cx="512" cy="86" r="46" fill="hsl(324 52% 70%)" opacity="0.16"/>
+
+  <g opacity="0.34">
+    <rect x="0" y="206" width="640" height="94" fill="none" stroke="hsl(324 34% 56%)" stroke-width="2"/>
+    <rect x="30" y="216" width="34" height="30" fill="hsl(324 36% 58%)" opacity="0.18"/>
+    <rect x="134" y="216" width="34" height="30" fill="hsl(324 36% 58%)" opacity="0.22"/>
+    <rect x="238" y="216" width="34" height="30" fill="hsl(324 36% 58%)" opacity="0.26"/>
+    <rect x="342" y="216" width="34" height="30" fill="hsl(324 36% 58%)" opacity="0.30"/>
+    <rect x="446" y="216" width="34" height="30" fill="hsl(324 36% 58%)" opacity="0.34"/>
+    <rect x="550" y="216" width="34" height="30" fill="hsl(324 36% 58%)" opacity="0.38"/>
+  </g>
+
+  <g>
+    <rect x="0" y="300" width="640" height="300" fill="hsl(324 24% 22%)"/>
+    <rect x="0" y="296" width="640" height="6" fill="hsl(324 30% 40%)" opacity="0.7"/>
+    <rect x="65.4" y="183.4" width="72" height="116.6" fill="hsl(324 38% 32%)"/>
+    <rect x="75.4" y="193.4" width="16" height="16" fill="hsl(324 40% 62%)" opacity="0.8"/>
+    <rect x="101.4" y="203.4" width="16" height="16" fill="hsl(324 40% 62%)" opacity="0.55"/>
+    <rect x="177.3" y="179.6" width="72" height="120.4" fill="hsl(324 42% 48%)"/>
+    <rect x="187.3" y="189.6" width="16" height="16" fill="hsl(324 40% 62%)" opacity="0.8"/>
+    <rect x="213.3" y="199.6" width="16" height="16" fill="hsl(324 40% 62%)" opacity="0.55"/>
+    <rect x="284.7" y="174.9" width="72" height="125.1" fill="hsl(324 38% 32%)"/>
+    <rect x="294.7" y="184.9" width="16" height="16" fill="hsl(324 40% 62%)" opacity="0.8"/>
+    <rect x="320.7" y="194.9" width="16" height="16" fill="hsl(324 40% 62%)" opacity="0.55"/>
+    <rect x="391.6" y="166.4" width="72" height="133.6" fill="hsl(324 42% 48%)"/>
+    <rect x="401.6" y="176.4" width="16" height="16" fill="hsl(324 40% 62%)" opacity="0.8"/>
+    <rect x="427.6" y="186.4" width="16" height="16" fill="hsl(324 40% 62%)" opacity="0.55"/>
+    <rect x="495.9" y="156.5" width="72" height="143.5" fill="hsl(324 38% 32%)"/>
+    <rect x="505.9" y="166.5" width="16" height="16" fill="hsl(324 40% 62%)" opacity="0.8"/>
+    <rect x="531.9" y="176.5" width="16" height="16" fill="hsl(324 40% 62%)" opacity="0.55"/>
+    <rect x="0" y="180" width="640" height="10" fill="hsl(324 30% 44%)" opacity="0.55"/>
+  </g>
+
+  <rect width="640" height="600" fill="url(#vig-looms-of-gujarat-floor)"/>
+  <rect x="0" y="524" width="640" height="76" fill="#0a0f1c" opacity="0.5"/>
+  <text x="26" y="558" font-family="Segoe UI, system-ui, sans-serif" font-size="24" font-weight="700" fill="#ffffff">Production floor</text>
+  <text x="26" y="582" font-family="Segoe UI, system-ui, sans-serif" font-size="17" font-weight="500" fill="#ffffff" opacity="0.72">Looms of Gujarat</text>
+</svg>

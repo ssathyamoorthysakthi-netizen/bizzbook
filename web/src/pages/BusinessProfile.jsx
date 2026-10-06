@@ -1,9 +1,10 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useCallback } from 'react';
 import { Link, useParams } from 'react-router-dom';
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 import {
   MapPin, Phone, Mail, Globe, Calendar, Users, TrendingUp, BadgeCheck, Send, ArrowLeft,
-  Share2, Heart, CheckCircle2, Package, Wrench, Eye, MessageSquare, Factory, Award, Truck, ShieldCheck
+  Share2, Heart, CheckCircle2, Package, Wrench, Eye, MessageSquare, Factory, Award, Truck, ShieldCheck,
+  X, ChevronLeft, ChevronRight, ImageOff
 } from 'lucide-react';
 import { api } from '../lib/api';
 import { cx, inr, priceLabel } from '../lib/data';
@@ -18,11 +19,6 @@ const REVIEWS = [
   { name: 'Suresh Reddy', role: 'Director, BuildTech Contractors', rating: 4, city: 'Hyderabad, Telangana', text: 'Good capacity and fair pricing. Would like to see shorter lead times during peak season, but overall a reliable partner.' }
 ];
 
-const GALLERY = [
-  'Manufacturing unit', 'CNC machining cell', 'Quality inspection', 'Warehouse & dispatch',
-  'Testing laboratory', 'Loading bay', 'Fabrication shop', 'Finished goods store'
-];
-
 export default function BusinessProfile() {
   const { slug } = useParams();
   const { toast } = useApp();
@@ -31,6 +27,7 @@ export default function BusinessProfile() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const [tab, setTab] = useState('products');
+  const [lightbox, setLightbox] = useState(null);
 
   const load = () => {
     setLoading(true); setError(null);
@@ -38,6 +35,28 @@ export default function BusinessProfile() {
   };
 
   useEffect(load, [slug]);
+
+  const photos = (data && data.business && data.business.gallery) || [];
+
+  const step = useCallback((dir) => {
+    setLightbox((i) => (i === null ? i : (i + dir + photos.length) % photos.length));
+  }, [photos.length]);
+
+  useEffect(() => {
+    if (lightbox === null) return undefined;
+    const onKey = (e) => {
+      if (e.key === 'Escape') setLightbox(null);
+      if (e.key === 'ArrowRight') step(1);
+      if (e.key === 'ArrowLeft') step(-1);
+    };
+    document.addEventListener('keydown', onKey);
+    const prev = document.body.style.overflow;
+    document.body.style.overflow = 'hidden';
+    return () => {
+      document.removeEventListener('keydown', onKey);
+      document.body.style.overflow = prev;
+    };
+  }, [lightbox, step]);
 
   const share = async () => {
     const url = window.location.href;
@@ -245,22 +264,117 @@ export default function BusinessProfile() {
 
             {/* gallery */}
             <div className="card mt-8 p-6">
-              <h2 className="text-[19px] font-extrabold text-ink-900">Gallery</h2>
-              <p className="mt-1 text-[13px] text-ink-500">Photos shared by {b.name} on BizBook.</p>
-              <div className="mt-4 grid grid-cols-2 gap-3 sm:grid-cols-4">
-                {GALLERY.map((g, i) => (
-                  <div key={g} className="group relative aspect-square overflow-hidden rounded-xl bg-gradient-to-br from-ink-100 to-ink-200">
-                    <div className="absolute inset-0 grid place-items-center p-3 text-center">
-                      <span className="text-[11px] font-semibold text-ink-500">{g}</span>
-                    </div>
-                    <span className="absolute inset-0 bg-brand-600/0 transition-colors group-hover:bg-brand-600/85 group-hover:text-white">
-                      <span className="grid h-full place-items-center text-[11px] font-bold opacity-0 transition-opacity group-hover:opacity-100">View photo</span>
-                    </span>
-                  </div>
-                ))}
+              <div className="flex items-baseline justify-between gap-3">
+                <h2 className="text-[19px] font-extrabold text-ink-900">Gallery</h2>
+                {photos.length > 0 && (
+                  <span className="text-[12px] font-semibold text-ink-500">{photos.length} photos</span>
+                )}
               </div>
+              <p className="mt-1 text-[13px] text-ink-500">Photos shared by {b.name} on BizBook.</p>
+
+              {photos.length === 0 ? (
+                <div className="mt-5 grid place-items-center rounded-xl border border-dashed border-ink-200 bg-ink-50/60 px-6 py-12 text-center">
+                  <ImageOff size={22} className="text-ink-400" />
+                  <p className="mt-2 text-[13.5px] font-semibold text-ink-600">No photos yet</p>
+                  <p className="mt-1 text-[12.5px] text-ink-500">
+                    {b.name} has not uploaded gallery images.
+                  </p>
+                </div>
+              ) : (
+                <div className="mt-4 grid grid-cols-2 gap-3 sm:grid-cols-3">
+                  {photos.map((src, i) => (
+                    <button
+                      key={src}
+                      type="button"
+                      onClick={() => setLightbox(i)}
+                      className="group relative aspect-square overflow-hidden rounded-xl bg-ink-100 text-left ring-1 ring-ink-900/5 transition-shadow hover:shadow-md focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-600"
+                      aria-label={`View photo ${i + 1} of ${photos.length}`}
+                    >
+                      <img
+                        src={src}
+                        alt={`${b.name} photo ${i + 1}`}
+                        loading="lazy"
+                        decoding="async"
+                        width="640"
+                        height="600"
+                        className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                        onError={(e) => { e.currentTarget.style.visibility = 'hidden'; }}
+                      />
+                      <span className="absolute inset-0 grid place-items-center bg-brand-600/0 text-[11px] font-bold text-white opacity-0 transition-all duration-300 group-hover:bg-brand-600/85 group-hover:opacity-100">
+                        View photo
+                      </span>
+                    </button>
+                  ))}
+                </div>
+              )}
             </div>
           </div>
+
+          {/* lightbox */}
+          <AnimatePresence>
+            {lightbox !== null && photos[lightbox] && (
+              <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                transition={{ duration: 0.18 }}
+                className="fixed inset-0 z-[70] flex flex-col items-center justify-center bg-ink-900/92 p-4"
+                onClick={() => setLightbox(null)}
+                role="dialog"
+                aria-modal="true"
+                aria-label="Photo viewer"
+              >
+                <button
+                  type="button"
+                  onClick={() => setLightbox(null)}
+                  className="absolute right-4 top-4 grid h-10 w-10 place-items-center rounded-full bg-white/10 text-white transition-colors hover:bg-white/20 focus:outline-none focus-visible:ring-2 focus-visible:ring-white"
+                  aria-label="Close photo viewer"
+                >
+                  <X size={20} />
+                </button>
+
+                <motion.img
+                  key={photos[lightbox]}
+                  initial={{ opacity: 0, scale: 0.97 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  transition={{ duration: 0.2 }}
+                  src={photos[lightbox]}
+                  alt={`${b.name} photo ${lightbox + 1}`}
+                  className="max-h-[82vh] max-w-full rounded-xl object-contain shadow-2xl"
+                  onClick={(e) => e.stopPropagation()}
+                />
+
+                <div
+                  className="mt-4 flex items-center gap-4"
+                  onClick={(e) => e.stopPropagation()}
+                >
+                  {photos.length > 1 && (
+                    <button
+                      type="button"
+                      onClick={() => step(-1)}
+                      className="grid h-9 w-9 place-items-center rounded-full bg-white/10 text-white transition-colors hover:bg-white/20 focus:outline-none focus-visible:ring-2 focus-visible:ring-white"
+                      aria-label="Previous photo"
+                    >
+                      <ChevronLeft size={18} />
+                    </button>
+                  )}
+                  <span className="text-[12.5px] font-semibold text-white/80">
+                    {lightbox + 1} / {photos.length}
+                  </span>
+                  {photos.length > 1 && (
+                    <button
+                      type="button"
+                      onClick={() => step(1)}
+                      className="grid h-9 w-9 place-items-center rounded-full bg-white/10 text-white transition-colors hover:bg-white/20 focus:outline-none focus-visible:ring-2 focus-visible:ring-white"
+                      aria-label="Next photo"
+                    >
+                      <ChevronRight size={18} />
+                    </button>
+                  )}
+                </div>
+              </motion.div>
+            )}
+          </AnimatePresence>
 
           {/* sidebar */}
           <aside className="space-y-5 lg:sticky lg:top-[86px] lg:self-start">

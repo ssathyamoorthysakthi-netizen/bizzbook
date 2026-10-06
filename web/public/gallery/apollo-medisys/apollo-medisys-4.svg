@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 600" width="640" height="600" role="img" aria-label="Warehouse &amp; storage at Apollo Medisys">
+  <defs>
+    <linearGradient id="sky-apollo-medisys-warehouse" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="hsl(195 30% 26%)"/>
+      <stop offset="100%" stop-color="hsl(195 26% 16%)"/>
+    </linearGradient>
+    <linearGradient id="vig-apollo-medisys-warehouse" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#000" stop-opacity="0"/>
+      <stop offset="72%" stop-color="#000" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#000" stop-opacity="0.45"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="640" height="600" fill="url(#sky-apollo-medisys-warehouse)"/>
+  <circle cx="512" cy="86" r="46" fill="hsl(195 52% 70%)" opacity="0.16"/>
+
+  <g opacity="0.34">
+    <rect x="0" y="206" width="640" height="94" fill="none" stroke="hsl(195 34% 56%)" stroke-width="2"/>
+    <rect x="30" y="216" width="34" height="30" fill="hsl(195 36% 58%)" opacity="0.18"/>
+    <rect x="134" y="216" width="34" height="30" fill="hsl(195 36% 58%)" opacity="0.22"/>
+    <rect x="238" y="216" width="34" height="30" fill="hsl(195 36% 58%)" opacity="0.26"/>
+    <rect x="342" y="216" width="34" height="30" fill="hsl(195 36% 58%)" opacity="0.30"/>
+    <rect x="446" y="216" width="34" height="30" fill="hsl(195 36% 58%)" opacity="0.34"/>
+    <rect x="550" y="216" width="34" height="30" fill="hsl(195 36% 58%)" opacity="0.38"/>
+  </g>
+
+  <g>
+    <rect x="0" y="300" width="640" height="300" fill="hsl(195 24% 22%)"/>
+    <rect x="0" y="296" width="640" height="6" fill="hsl(195 30% 40%)" opacity="0.7"/>
+    <rect x="60" y="130" width="112" height="44" rx="3" fill="hsl(195 38% 32%)"/>
+    <rect x="70" y="142" width="46" height="10" fill="hsl(195 40% 62%)" opacity="0.75"/>
+    <rect x="124" y="144" width="34" height="8" fill="hsl(195 40% 62%)" opacity="0.5"/>
+    <rect x="195" y="130" width="112" height="44" rx="3" fill="hsl(195 38% 32%)"/>
+    <rect x="205" y="142" width="46" height="10" fill="hsl(195 40% 62%)" opacity="0.75"/>
+    <rect x="259" y="144" width="34" height="8" fill="hsl(195 40% 62%)" opacity="0.5"/>
+    <rect x="330" y="130" width="112" height="44" rx="3" fill="hsl(195 38% 32%)"/>
+    <rect x="340" y="142" width="46" height="10" fill="hsl(195 40% 62%)" opacity="0.75"/>
+    <rect x="394" y="144" width="34" height="8" fill="hsl(195 40% 62%)" opacity="0.5"/>
+    <rect x="465" y="130" width="112" height="44" rx="3" fill="hsl(195 38% 32%)"/>
+    <rect x="475" y="142" width="46" height="10" fill="hsl(195 40% 62%)" opacity="0.75"/>
+    <rect x="529" y="144" width="34" height="8" fill="hsl(195 40% 62%)" opacity="0.5"/>
+    <rect x="60" y="188" width="112" height="44" rx="3" fill="hsl(195 42% 48%)"/>
+    <rect x="70" y="200" width="46" height="10" fill="hsl(195 40% 62%)" opacity="0.6"/>
+    <rect x="124" y="202" width="34" height="8" fill="hsl(195 40% 62%)" opacity="0.4"/>
+    <rect x="195" y="188" width="112" height="44" rx="3" fill="hsl(195 42% 48%)"/>
+    <rect x="205" y="200" width="46" height="10" fill="hsl(195 40% 62%)" opacity="0.6"/>
+    <rect x="259" y="202" width="34" height="8" fill="hsl(195 40% 62%)" opacity="0.4"/>
+    <rect x="330" y="188" width="112" height="44" rx="3" fill="hsl(195 42% 48%)"/>
+    <rect x="340" y="200" width="46" height="10" fill="hsl(195 40% 62%)" opacity="0.6"/>
+    <rect x="394" y="202" width="34" height="8" fill="hsl(195 40% 62%)" opacity="0.4"/>
+    <rect x="465" y="188" width="112" height="44" rx="3" fill="hsl(195 42% 48%)"/>
+    <rect x="475" y="200" width="46" height="10" fill="hsl(195 40% 62%)" opacity="0.6"/>
+    <rect x="529" y="202" width="34" height="8" fill="hsl(195 40% 62%)" opacity="0.4"/>
+    <rect x="60" y="246" width="112" height="44" rx="3" fill="hsl(195 38% 32%)"/>
+    <rect x="70" y="258" width="46" height="10" fill="hsl(195 40% 62%)" opacity="0.45"/>
+    <rect x="124" y="260" width="34" height="8" fill="hsl(195 40% 62%)" opacity="0.3"/>
+    <rect x="195" y="246" width="112" height="44" rx="3" fill="hsl(195 38% 32%)"/>
+    <rect x="205" y="258" width="46" height="10" fill="hsl(195 40% 62%)" opacity="0.45"/>
+    <rect x="259" y="260" width="34" height="8" fill="hsl(195 40% 62%)" opacity="0.3"/>
+    <rect x="330" y="246" width="112" height="44" rx="3" fill="hsl(195 38% 32%)"/>
+    <rect x="340" y="258" width="46" height="10" fill="hsl(195 40% 62%)" opacity="0.45"/>
+    <rect x="394" y="260" width="34" height="8" fill="hsl(195 40% 62%)" opacity="0.3"/>
+    <rect x="465" y="246" width="112" height="44" rx="3" fill="hsl(195 38% 32%)"/>
+    <rect x="475" y="258" width="46" height="10" fill="hsl(195 40% 62%)" opacity="0.45"/>
+    <rect x="529" y="260" width="34" height="8" fill="hsl(195 40% 62%)" opacity="0.3"/>
+    <rect x="50" y="306" width="540" height="10" fill="hsl(195 30% 46%)" opacity="0.6"/>
+  </g>
+
+  <rect width="640" height="600" fill="url(#vig-apollo-medisys-warehouse)"/>
+  <rect x="0" y="524" width="640" height="76" fill="#0a0f1c" opacity="0.5"/>
+  <text x="26" y="558" font-family="Segoe UI, system-ui, sans-serif" font-size="24" font-weight="700" fill="#ffffff">Warehouse &amp; storage</text>
+  <text x="26" y="582" font-family="Segoe UI, system-ui, sans-serif" font-size="17" font-weight="500" fill="#ffffff" opacity="0.72">Apollo Medisys</text>
+</svg>

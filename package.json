@@ -10,7 +10,8 @@
     "dev:web": "npm run dev --prefix web",
     "dev:api": "npm run dev --prefix server",
     "seed": "npm run seed --prefix server",
-    "seed:force": "npm run seed:force --prefix server"
+    "seed:force": "npm run seed:force --prefix server",
+    "gallery": "node server/scripts/generate-gallery.js"
   },
   "engines": {
     "node": ">=18"
