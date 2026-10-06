@@ -1,8 +1,7 @@
 'use strict';
 
 const express = require('express');
-const { ObjectId } = require('mongodb');
-const { col } = require('../mongo');
+const { col, toObjectId } = require('../mongo');
 const { requireAdmin } = require('../auth');
 
 const router = express.Router();
@@ -55,7 +54,8 @@ router.get('/users', async (req, res, next) => {
 
 router.patch('/users/:id', async (req, res, next) => {
   try {
-    const id = new ObjectId(req.params.id);
+    const id = toObjectId(req.params.id);
+    if (!id) return res.status(400).json({ error: 'Invalid id' });
     const row = await col('users').findOne({ _id: id });
     if (!row) return res.status(404).json({ error: 'User not found' });
 
@@ -72,7 +72,9 @@ router.patch('/users/:id', async (req, res, next) => {
 router.delete('/users/:id', async (req, res, next) => {
   try {
     if (req.params.id === req.user.id) return res.status(400).json({ error: 'You cannot delete your own account' });
-    const r = await col('users').deleteOne({ _id: new ObjectId(req.params.id) });
+    const id = toObjectId(req.params.id);
+    if (!id) return res.status(400).json({ error: 'Invalid id' });
+    const r = await col('users').deleteOne({ _id: id });
     if (r.deletedCount === 0) return res.status(404).json({ error: 'User not found' });
     res.json({ ok: true });
   } catch (e) { next(e); }
@@ -94,7 +96,8 @@ router.get('/businesses', async (_req, res, next) => {
 
 router.patch('/businesses/:id/verify', async (req, res, next) => {
   try {
-    const id = new ObjectId(req.params.id);
+    const id = toObjectId(req.params.id);
+    if (!id) return res.status(400).json({ error: 'Invalid id' });
     const verified = !!(req.body || {}).verified;
     const patch = { verified, updatedAt: new Date() };
     if (verified) patch.badge = (req.body || {}).badge || 'Verified';
@@ -106,7 +109,8 @@ router.patch('/businesses/:id/verify', async (req, res, next) => {
 
 router.delete('/businesses/:id', async (req, res, next) => {
   try {
-    const id = new ObjectId(req.params.id);
+    const id = toObjectId(req.params.id);
+    if (!id) return res.status(400).json({ error: 'Invalid id' });
     const r = await col('businesses').deleteOne({ _id: id });
     if (r.deletedCount === 0) return res.status(404).json({ error: 'Business not found' });
     await Promise.all([

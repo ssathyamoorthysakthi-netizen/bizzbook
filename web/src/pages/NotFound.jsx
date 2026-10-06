@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Search, Home, Building2, Package, Wrench, Briefcase, LifeBuoy, ArrowRight, Sparkles } from 'lucide-react';
 
@@ -12,6 +12,7 @@ const SUGGESTIONS = [
 ];
 
 export default function NotFound() {
+  const navigate = useNavigate();
   return (
     <section className="container-bb flex min-h-[68vh] flex-col items-center justify-center py-16 text-center">
       <motion.p initial={{ opacity: 0, scale: .9 }} animate={{ opacity: 1, scale: 1 }}
@@ -30,11 +31,11 @@ export default function NotFound() {
           <input
             className="w-full bg-transparent py-2.5 text-[14px] text-ink-900 outline-none placeholder:text-ink-400"
             placeholder="Search businesses, products and services"
-            onKeyDown={e => {
-              if (e.key === 'Enter' && e.currentTarget.value.trim()) {
-                window.location.href = `/search?q=${encodeURIComponent(e.currentTarget.value.trim())}`;
-              }
-            }}
+                onKeyDown={e => {
+                if (e.key === 'Enter' && e.currentTarget.value.trim()) {
+                  navigate(`/search?q=${encodeURIComponent(e.currentTarget.value.trim())}`);
+                }
+              }}
           />
           <Link to="/search" className="btn-primary btn-md shrink-0">Search</Link>
         </div>

@@ -1,9 +1,17 @@
 'use strict';
 
-const { MongoClient } = require('mongodb');
+const { MongoClient, ObjectId } = require('mongodb');
 
 const URI = process.env.MONGO_URI || 'mongodb://127.0.0.1:27017';
 const DB_NAME = process.env.MONGO_DB || 'bizbook';
+
+// Validates a 24-char hex id before it reaches Mongo, so a malformed URL
+// returns 400 instead of throwing BSONError and surfacing as a 500.
+function toObjectId(value) {
+  if (value instanceof ObjectId) return value;
+  if (typeof value !== 'string' || !/^[0-9a-fA-F]{24}$/.test(value)) return null;
+  return new ObjectId(value);
+}
 
 let client = null;
 let db = null;
@@ -69,4 +77,4 @@ async function close() {
   db = null;
 }
 
-module.exports = { connect, close, col, getDb: () => db, DB_NAME, URI };
+module.exports = { connect, close, col, toObjectId, getDb: () => db, DB_NAME, URI };

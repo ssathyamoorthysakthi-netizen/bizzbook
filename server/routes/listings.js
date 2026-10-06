@@ -2,7 +2,7 @@
 
 const express = require('express');
 const { ObjectId } = require('mongodb');
-const { col } = require('../mongo');
+const { col, toObjectId } = require('../mongo');
 const { requireAuth } = require('../auth');
 
 const router = express.Router();
@@ -330,7 +330,9 @@ router.post('/saved-searches', requireAuth, async (req, res, next) => {
 
 router.delete('/saved-searches/:id', requireAuth, async (req, res, next) => {
   try {
-    await col('saved_searches').deleteOne({ _id: new ObjectId(req.params.id), userId: new ObjectId(req.user.id) });
+    const id = toObjectId(req.params.id);
+    if (!id) return res.status(400).json({ error: 'Invalid id' });
+    await col('saved_searches').deleteOne({ _id: id, userId: new ObjectId(req.user.id) });
     res.json({ ok: true });
   } catch (e) { next(e); }
 });

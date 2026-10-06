@@ -2,7 +2,7 @@
 
 const express = require('express');
 const { ObjectId } = require('mongodb');
-const { col } = require('../mongo');
+const { col, toObjectId } = require('../mongo');
 const { requireAuth } = require('../auth');
 
 const router = express.Router();
@@ -77,7 +77,9 @@ router.get('/sent', requireAuth, async (req, res, next) => {
 
 router.patch('/:id/status', requireAuth, async (req, res, next) => {
   try {
-    const row = await col('enquiries').findOne({ _id: new ObjectId(req.params.id) });
+    const id = toObjectId(req.params.id);
+    if (!id) return res.status(400).json({ error: 'Invalid id' });
+    const row = await col('enquiries').findOne({ _id: id });
     if (!row) return res.status(404).json({ error: 'Enquiry not found' });
 
     if (req.user.role !== 'admin') {
